@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="empty_string"> </string>
+    <string name="custom_text_input_hint">input hint\n</string>
+    <string name="custom_text_input_done">done</string>
+    <string name="dropdown_select_hint">Selecciona</string>
+
+    <!-- home -->
+    <string name="action_tags_recargas_automaticas">Recargas programadas</string>
+    <string name="action_tags_recharge">Recargar</string>
+    <string name="activar_tag">Presiona para activar</string>
+    <string name="adeudos_tag">Consultar adeudos</string>
+    <string name="main_actions_recargar">Facturar</string>
+    <string name="home_showcase_ok_button">ENTENDIDO</string>
+    <string name="button_answer_yes">Sí</string>
+    <string name="button_answer_yes_active">Sí, ACTIVAR</string>
+    <string name="button_answer_no">No</string>
+    <string name="button_answer_later">MÁS TARDE</string>
+    <string name="tag_detail_fragment_new_tag">Tag nuevo</string>
+    <string name="activate_tag_title">Activación de Tag</string>
+    <string name="text_scheme_available_payment">Esquemas de pago disponibles:</string>
+    <string name="text_pospago">Pospago</string>
+    <string name="text_prepaid">Prepago</string>
+    <string name="text_pospago_subtitle">Con cargo a tu Tarjeta de Crédito</string>
+    <string name="text_pospago_first_message">Sin saldos mínimos ni comisiones.</string>
+    <string name="text_pospago_second_message">Cobro por movimiento.</string>
+    <string name="text_prepaid_subtitle">Realiza una recarga mínima de $200</string>
+    <string name="text_prepaid_first_message">Desde Tu Tag PASE móvil, web o en\nmás de 170 mil puntos de recarga.</string>
+    <string name="button_domicliar">Domiciliar</string>
+    <string name="button_recharge">Recargar</string>
+    <string name="text_other_later">En otro momento</string>
+
+
+
+    <!-- home empty tags Begin-->
+    <string name="home_empty_tag_title">Tu cuenta no tiene tags</string>
+    <string name="home_empty_tag_description">Agrega un tag a tu cuenta para consultar su información</string>
+    <string name="home_empty_tag_add_tag">AGREGAR TAG</string>
+    <!-- home empty tags Ended-->
+
+    <!-- Strings related to DrawerMenu -->
+    <string name="drawer_menu_open_action">Abrir menú</string>
+    <string name="drawer_menu_close_action">Cerrar menú</string>
+    <string name="empty_list_elements_message">No existen elementos</string>
+
+    <!--Dialogs-->
+    <string name="dialog_continue_label">Continuar</string>
+    <string name="dialog_finished_label">Finalizar</string>
+    <string name="dialog_cancel_label">Cancelar</string>
+    <string name="dialog_accept_label">Aceptar</string>
+
+    <string name="generic_multipart_form_data">multipart/form-data</string>
+    <string name="generic_image_jpg">image/jpg</string>
+    <string name="generic_save_information">Guardando información&#8230;</string>
+    <string name="generic_save">Guardar</string>
+
+    <!-- Services Erros -->
+    <string name="services_not_available">Servicio no disponible, intente mas tarde</string>
+
+    <string name="card_is_not_associated">Tarjeta asociada</string>
+    <string name="password_hint">Contraseña</string>
+
+    <!--Dialog token -->
+    <string name="token_dialog_token_toolbar">Activa tu token</string>
+
+    <!--Domiciliation-->
+    <string name="domiciliation_other_bank_tel">tel:%1$s</string>
+    <string name="domiciliation_form_names">Nombre(s)</string>
+    <string name="domiciliation_form_paternal_name">Primer apellido</string>
+    <string name="domiciliation_form_maternal_name">Segundo apellido</string>
+    <string name="domiciliation_form_email">Email</string>
+    <string name="domiciliation_form_phone">Número celular</string>
+
+    <!--Transaction-->
+    <string name="transaction_amount_text">Monto:</string>
+    <string name="transaction_description_text">Descripción:</string>
+    <string name="transaction_parking_text">Estacionamiento:</string>
+    <string name="transaction_parking_id_text">ID de estacionamiento:</string>
+    <string name="transaction_parking_chargetext">Plaza de cobro:</string>
+    <string name="transaction_urban_autopista_text">Autopista urbana:</string>
+    <string name="transaction_amount_recharge_text">Monto recargado:</string>
+    <string name="transaction_fee_recharge_text">Comisión por recarga:</string>
+    <string name="transaction_highway_text">Carretera:</string>
+    <string name="transaction_town_recharge_text">Plaza de cobro:</string>
+    <string name="transaction_lane_text">Carril:</string>
+    <string name="transaction_date_text">Fecha:</string>
+    <string name="transaction_hour_in_text">Hora de entrada:</string>
+    <string name="transaction_hour_out_text">Hora de salida:</string>
+    <string name="transaction_hour_text">Hora:</string>
+    <string name="transaction_folio_text">Folio:</string>
+    <string name="transaction_associate_card_text">Tarjeta asociada:</string>
+    <string name="transaction_payment_method_text">Método de pago:</string>
+</resources>

@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/operation_token_to_action_graph"
+    app:startDestination="@id/operationTokenFragment">
+
+
+    <fragment
+        android:id="@+id/operationTokenFragment"
+        android:name="com.jesusvilla.test.token.ui.OperationTokenFragment"
+        android:label="OperationTokenFragment" />
+</navigation>

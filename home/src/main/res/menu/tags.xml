@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <group android:id="@+id/menuTag">
+
+        <item
+            android:id="@+id/tags_menu_add_tag"
+            android:title="@string/action_tags_agregar"
+            app:showAsAction="never" />
+
+        <item
+            android:id="@+id/tags_menu_edit_tag"
+            android:title="@string/action_tags_editar"
+            app:showAsAction="never" />
+
+        <item
+            android:id="@+id/tags_menu_delete"
+            android:title="@string/action_tags_quitar"
+            app:showAsAction="never" />
+
+    </group>
+    <group android:id="@+id/menuTag2">
+        <item
+            android:id="@+id/tags_menu_attach_to_card"
+            android:enabled="false"
+            android:title="@string/action_tags_domiciliar"
+            android:visible="false"
+            app:showAsAction="never" />
+
+        <item
+            android:id="@+id/tags_menu_cambiar_tdc"
+            android:enabled="false"
+            android:title="@string/action_tags_cambiar_tdc"
+            android:visible="false"
+            app:showAsAction="never" />
+
+        <item
+            android:id="@+id/tags_menu_clarifications"
+            android:title="@string/action_tags_aclaraciones"
+            app:showAsAction="never" />
+
+        <item
+            android:id="@+id/tags_menu_invoices"
+            android:title="@string/action_tags_facturar"
+            app:showAsAction="never" />
+        <item
+            android:id="@+id/tags_menu_recargas_automaticas"
+            android:enabled="false"
+            android:title="@string/action_tags_recargas_automaticas"
+            android:visible="false"
+            app:showAsAction="never" />
+    </group>
+</menu>

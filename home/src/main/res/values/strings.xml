@@ -1,0 +1,154 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="action_tags_agregar">Agregar tag</string>
+    <string name="action_tags_quitar">Quitar tag</string>
+    <string name="action_tags_editar">Editar tag</string>
+    <string name="action_tags_aclaraciones">Aclaraciones</string>
+    <string name="action_tags_facturar">Facturar</string>
+    <string name="action_tags_domiciliar">Domiciliar tag</string>
+    <string name="action_tags_cambiar_tdc">Cambiar tarjeta de crédito</string>
+
+    <string name="attach_to_card_toolbar_title">Domiciliar Tag</string>
+
+    <string name="card_title_amex_domiciliacion">Captura los datos de tu tarjeta para comenzar con el proceso de domiciliación.</string>
+    <string name="card_title_personal_data_domiciliacion">Captura los datos solicitados para continuar con el proceso de domiciliación</string>
+
+    <string name="clarifications_toolbar_title">Aclaraciones</string>
+
+    <string name="clarification_detail_folio_label">Folio</string>
+    <string name="clarification_detail_created_date_label">Fecha aclaración</string>
+    <string name="clarification_detail_status_label">Estatus</string>
+    <string name="clarification_detail_reason_label">Motivo</string>
+    <string name="clarification_detail_resolution_label">Dictamen</string>
+    <string name="clarification_detail_resolution_date_label">Fecha dictamen</string>
+    <string name="clarification_detail_compensation_date_label">Fecha devolución</string>
+    <string name="clarification_detail_compensation_label">Devolución</string>
+    <string name="clarification_detail_comment_label">Comentario</string>
+    <string name="clarification_detail_error_message">No se pudo obtener los datos</string>
+    <string name="clarification_detail_retry_label">Reintentar</string>
+
+    <string name="invoices_toolbar_title">Facturar</string>
+
+    <!--Edit Tag dialog Begin-->
+    <string name="edit_tag_dialog_title">Editar tag</string>
+    <string name="edit_tag_dialog_label_hint">Nombre del tag</string>
+    <string name="edit_tag_dialog_success">Datos del tag actualizados</string>
+    <string name="edit_tag_dialog_error">No se pudo actualizar el tag</string>
+    <!--Edit Tag dialog Ended-->
+
+    <!--Delete Tag dialog Begin-->
+    <string name="delete_tag_dialog_title">Confirmación</string>
+    <string name="delete_tag_dialog_body">¿Eliminar el tag %s?</string>
+    <!--Delete Tag dialog Ended-->
+
+    <!--TagValidationFragment Begin-->
+    <string name="tag_new">Nuevo Tag</string>
+    <string name="tag_validation_tag_alias_hint">Nombre del tag</string>
+    <string name="tag_validation_tag_prefix_hint">Prefijo</string>
+    <string name="tag_validation_tag_alias_autofill">Mi coche rojo</string>
+    <string name="tag_validation_tag_number_hint">Número de tag</string>
+    <string name="tag_validation_loading_tag_verification">Verificando tag…</string>
+    <string name="tag_validation_tag_number_helper_text">8 dígitos + 1 dígito verificador</string>
+    <string name="tag_validation_continue">SIGUIENTE</string>
+    <string name="tag_validation_default_tag_prefix">IMDM</string>
+
+    <string name="tag_validation_tag_invalid_error_title">Datos incorrectos</string>
+    <string name="tag_validation_network_error_tag">No es posible asociar ese tag.</string>
+    <string name="tag_validation_tag_number_prefix_error">El prefijo y/o el número del tag son incorrectos</string>
+    <string name="tag_validation_tag_not_found_error_title">Atención</string>
+    <string name="tag_validation_tag_confirm_button">Entendido</string>
+
+    <string-array name="tag_prefix">
+        <item>IMDM</item>
+        <item>CPFI</item>
+        <item>005</item>
+        <item>006</item>
+    </string-array>
+    <!--TagValidationFragment Ended-->
+
+    <!--Tag property validation Fragment Begin-->
+    <string name="tag_property_validation_title">Verificación de propiedad del tag</string>
+    <string name="tag_property_validation_tag_hint">Tag</string>
+    <string name="tag_property_validation_first_num_label">primeros</string>
+    <string name="tag_property_validation_num_separator_label">•••• ••••</string>
+    <string name="tag_property_validation_last_num_label">últimos</string>
+    <string name="tag_property_validation_bottom_disclaimer">Para verificar que el tag es suyo, ingrese los primeros y últimos cuatro dígitos de la tarjeta de crédito a la que está ligado.</string>
+    <!--Tag property validation Ended-->
+
+    <string name="fragment_verify_tag_title">Verifica tu TAG</string>
+    <string name="fragment_verify_tag_subtitle">Ingresa los primeros y últimos 4 dígitos de la tarjeta a la que está asociado.</string>
+    <string name="fragment_verify_tag_first_digits">Primeros 4 dígitos</string>
+    <string name="fragment_verify_tag_last_digits">Últimos 4 dígitos</string>
+
+    <!--Select Tag Begin-->
+    <string name="select_tag_title">Tus Tags</string>
+    <string name="select_tag_item_tag_no_payment">Sin forma de pago</string>
+    <!--Select Tag Ended-->
+
+    <string name="account_menu_tags_add_address">Agregar domicilio</string>
+    <string name="account_menu_tags_delete_address">Eliminar domicilio</string>
+
+    <!--Recharge Tag begin-->
+    <string name="recharge_tags_title">Recargar Tag</string>
+    <!--Recharge Tag ended-->
+
+    <!-- Home Fragment (TOP) -->
+    <string name="home_fragment_btn_bills">Facturas</string>
+    <string name="home_fragment_btn_recharge">Recargar</string>
+    <string name="home_fragment_for_you">Más para ti</string>
+    <string name="home_fragment_add_tag">Agregar tag</string>
+    <string name="home_fragment_prepaid">Prepago</string>
+    <string name="home_fragment_censor_credit_card">····</string>
+    <string name="home_fragment_no_tags">Sin tags asociados</string>
+    <string name="home_fragment_activate_tag">Activar tag</string>
+    <string name="home_fragment_new_tag">Tag nuevo</string>
+    <string name="home_fragment_first_caorusel_title">1 año de descuentos</string>
+    <string name="home_fragment_first_caorusel_body">Adquiriendo tu tag con TDU</string>
+    <string name="home_fragment_first_caorusel_link_text">Conoce más</string>
+    <string name="home_fragment_second_caorusel_title">En la compra de tu TAG rosa</string>
+    <string name="home_fragment_second_caorusel_body">PASE donará porcentaje a FUCAM</string>
+    <string name="home_fragment_second_caorusel_link_text">Consíguelo aquí</string>
+    <string name="home_fragment_third_caorusel_title">$100 pesos de bonificación</string>
+    <string name="home_fragment_third_caorusel_body">Domiciliando con BanBajío</string>
+    <string name="home_fragment_third_caorusel_link_text">Domicilia aquí</string>
+    <string name="home_fragment_parking_action">Estacionamiento</string>
+    <string name="home_fragment_credit_score_action">Domiciliar</string>
+    <string name="home_fragment_local_mall_action">Promociones</string>
+    <string name="home_fragment_shield_person_action">Token</string>
+    <!-- Home Fragment (BOTTOM) -->
+
+    <!-- Your Tags Fragment (TOP) -->
+    <string name="your_tags_fragment_title">Tus Tags</string>
+    <string name="your_tags_fragment_btn_add_new_tag">Agregar un nuevo Tag</string>
+    <string name="your_tags_fragment_limit_tag">Límite de 5 Tags por cuenta alcanzado.</string>
+    <string name="your_tags_fragment_modal_delete_tag_title">¿Eliminar Tag?</string>
+    <string name="your_tags_fragment_modal_delete_tag_body">Podrás vincularlo a cualquier cuenta después de 24 horas.</string>
+    <string name="your_tags_fragment_modal_tag_btn">Eliminar</string>
+    <string name="your_tags_fragment_modal_delete_tag_btn_cancel">Cancelar</string>
+    <string name="your_tags_fragment_success_delete">Tag eliminado exitosamente.</string>
+    <string name="your_tags_fragment_error_token">La clave dinámica de operación no es válida.</string>
+    <!-- Your Tags Fragment (BOTTOM) -->
+
+    <!--Add tag (TOP) -->
+    <string name="fragment_register_add_title">Agregar tag</string>
+    <string name="fragment_register_tag_subtitle">Ingresa la información de tu Tag</string>
+    <string name="fragment_register_tag_alias">Alias del Tag</string>
+    <string name="fragment_register_tag_prefix">Prefijo</string>
+    <string name="fragment_register_tag_prefix_select">Selecciona</string>
+    <string name="fragment_register_tag_number">Número del Tag</string>
+    <string name="fragment_register_tag_number_info">8 dígitos + dígito verificador</string>
+    <string name="fragment_register_tag_dont_have">¿Aún no tienes tu tag? Adquiérelo aquí</string>
+    <string name="fragment_register_tag_buy_it_here">Adquiérelo aquí</string>
+    <string name="fragment_register_tag_terms">Al registrarte aceptas los términos y condiciones del servicio y confirmas que has leído nuestro aviso de privacidad.</string>
+    <string name="fragment_register_tag_terms_conditions">términos y condiciones</string>
+    <string name="fragment_register_tag_terms_notice_privacy">aviso de privacidad.</string>
+    <string name="fragment_register_tag_btn_add">Agregar</string>
+    <string name="fragment_register_tag_cpfi">CPFI</string>
+    <string name="fragment_register_tag_imdm">IMDM</string>
+    <string name="fragment_register_tag_005">005</string>
+    <string name="fragment_register_tag_006">006</string>
+    <string name="fragment_register_veryfy_tag_subtitle">Ingresa los primeros y últimos 4 dígitos de la tarjeta a la que está asociado.</string>
+    <!--Add tag (BOTTOM) -->
+
+</resources>

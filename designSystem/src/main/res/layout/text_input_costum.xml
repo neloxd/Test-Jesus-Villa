@@ -1,0 +1,235 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/color_white"
+    android:theme="@style/Theme.PASE">
+
+    <TextView
+        android:id="@+id/tv_title_til"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="@style/TextAppearance.App.Input.Title"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:text="Android" />
+
+    <ImageView
+        android:id="@+id/iv_title_icon"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/space_6"
+        android:src="@drawable/ic_arrow_back"
+        app:layout_constraintStart_toEndOf="@id/tv_title_til"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/container_input"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/tv_title_til">
+
+        <View
+            android:id="@+id/divider_left_icon"
+            android:layout_width="@dimen/space_1"
+            android:layout_height="@dimen/space_48"
+            android:layout_marginVertical="@dimen/space_4"
+            android:layout_marginStart="@dimen/space_44"
+            android:background="@color/color_border"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/til"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginVertical="@dimen/space_4"
+            app:errorIconDrawable="@null"
+            app:errorTextAppearance="@style/TextAppearance.App.Error"
+            app:hintEnabled="false"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/text_input_edit_text"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/space_48"
+                android:layout_marginBottom="@dimen/space_4"
+                android:hint="Android" />
+        </com.google.android.material.textfield.TextInputLayout>
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/til_dropdown"
+        style="@style/Widget.App.Dropdown"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginVertical="@dimen/space_4"
+        android:minHeight="@dimen/space_48"
+        app:errorIconDrawable="@null"
+        app:hintEnabled="false"
+        app:layout_constraintTop_toBottomOf="@id/container_input">
+
+        <com.google.android.material.textfield.MaterialAutoCompleteTextView
+            android:id="@+id/dropdown"
+            style="@style/Widget.App.Dropdown.AutoComplete"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/space_48"
+            android:layout_marginBottom="@dimen/space_4"
+            android:inputType="none"
+            android:padding="@dimen/space_2"
+            app:dropDownBackgroundTint="@color/white"
+            tools:hint="Android" />
+    </com.google.android.material.textfield.TextInputLayout>
+
+
+    <TextView
+        android:id="@+id/tv_title_validation_til"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/password_hint"
+        android:textAppearance="@style/TextAppearance.App.Input.Title"
+        android:visibility="gone"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/til_dropdown" />
+
+    <androidx.appcompat.widget.LinearLayoutCompat
+        android:id="@+id/container_validations"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:visibility="gone"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/tv_title_validation_til">
+
+        <TextView
+            android:id="@+id/tv_footer_validation_til"
+            style="@style/TextAppearance.App.Muted.Label"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/space_4"
+            android:text="Debe contener al menos:"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/container_icon_input" />
+
+        <androidx.appcompat.widget.LinearLayoutCompat
+            android:id="@+id/first_validation_container"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:paddingTop="@dimen/dim_6"
+            android:weightSum="1">
+
+            <ImageView
+                android:id="@+id/iv_left_icon_validation_input_1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginRight="@dimen/space_12"
+                android:src="@drawable/ic_uncheck_circle" />
+
+            <TextView
+                android:id="@+id/tv_footer_til_1"
+                style="@style/TextAppearance.App.Muted.Label"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:gravity="center_vertical"
+                android:text="@string/text_input_layout_custom_first_validation"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/container_icon_input" />
+        </androidx.appcompat.widget.LinearLayoutCompat>
+
+        <androidx.appcompat.widget.LinearLayoutCompat
+            android:id="@+id/second_validation_container"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:paddingTop="@dimen/dim_5"
+            android:weightSum="1">
+
+            <ImageView
+                android:id="@+id/iv_left_icon_validation_input_2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginRight="@dimen/space_12"
+                android:src="@drawable/ic_uncheck_circle" />
+
+            <TextView
+                android:id="@+id/tv_footer_til_2"
+                style="@style/TextAppearance.App.Muted.Label"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:gravity="center_vertical"
+                android:text="@string/text_input_layout_custom_second_validation"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/container_icon_input" />
+        </androidx.appcompat.widget.LinearLayoutCompat>
+
+        <androidx.appcompat.widget.LinearLayoutCompat
+            android:id="@+id/third_validation_container"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:paddingTop="@dimen/dim_5"
+            android:weightSum="1">
+
+            <ImageView
+                android:id="@+id/iv_left_icon_validation_input_3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginRight="@dimen/space_12"
+                android:src="@drawable/ic_uncheck_circle" />
+
+            <TextView
+                android:id="@+id/tv_footer_til_3"
+                style="@style/TextAppearance.App.Muted.Label"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:gravity="center_vertical"
+                android:text="@string/text_input_layout_custom_third_validation"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/container_icon_input" />
+        </androidx.appcompat.widget.LinearLayoutCompat>
+
+        <androidx.appcompat.widget.LinearLayoutCompat
+            android:id="@+id/fourth_validation_container"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:paddingTop="@dimen/dim_5"
+            android:weightSum="1">
+
+            <ImageView
+                android:id="@+id/iv_left_icon_validation_input_4"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginRight="@dimen/space_12"
+                android:src="@drawable/ic_uncheck_circle" />
+
+            <TextView
+                android:id="@+id/tv_footer_til_4"
+                style="@style/TextAppearance.App.Muted.Label"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:gravity="center_vertical"
+                android:text="@string/text_input_layout_custom_fourth_validation"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/container_icon_input" />
+        </androidx.appcompat.widget.LinearLayoutCompat>
+
+    </androidx.appcompat.widget.LinearLayoutCompat>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

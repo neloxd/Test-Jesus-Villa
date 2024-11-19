@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/change_phone_number_graph"
+    app:startDestination="@id/changePhoneNumberFragment2">
+    <fragment
+        android:id="@+id/changePhoneNumberFragment2"
+        android:name="com.jesusvilla.test.token.ui.ChangePhoneNumberFragment"
+        android:label="ChangePhoneNumberFragment" >
+        <action
+            android:id="@+id/action_changePhoneNumberFragment2_to_change_validate_token_graph"
+            app:destination="@id/change_validate_token_graph"
+            app:enterAnim="@anim/nav_slide_in_right"
+            app:exitAnim="@anim/nav_slide_out_left"
+            app:popEnterAnim="@anim/nav_slide_in_right"
+            app:popExitAnim="@anim/nav_slide_out_left" />
+    </fragment>
+    <include app:graph="@navigation/operation_validate_token_dialog_graph" />
+</navigation>

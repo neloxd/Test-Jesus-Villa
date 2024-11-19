@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <declare-styleable name="CustomDropdown">
+        <attr name="dropdownTitle" format="string" />
+        <attr name="dropdownPlaceholder" format="string" />
+        <attr name="dropdownHelperText" format="string" />
+        <attr name="isDropdownActive" format="boolean" />
+    </declare-styleable>
+</resources>

@@ -1,0 +1,26 @@
+<resources>
+    <string name="app_name">Jesus Villa Test</string>
+
+    <!-- Main Activity  (TOP)-->
+    <!--Drawer menu-->
+    <string name="drawer_token">Token operaciones</string>
+    <string name="drawer_parking_tickets">Boletos estacionamientos</string>
+    <string name="drawer_account">Cuenta</string>
+    <string name="drawer_tax_data">Datos fiscales</string>
+    <string name="drawer_payment_method">Formas de pago</string>
+    <string name="drawer_notifications">Notificaciones</string>
+    <string name="drawer_tdu_promotion">Promociones TDU</string>
+    <string name="drawer_rewards">Recompensas</string>
+    <string name="drawer_coverage">Cobertura</string>
+    <string name="drawer_your_journey">Tu viaje</string>
+    <string name="drawer_contact">Contacto</string>
+    <string name="drawer_review">Evaluar</string>
+
+    <!--BottomNavigation View-->
+    <string name="bottom_tab_home">Inicio</string>
+    <string name="bottom_tab_trip">Viaje</string>
+    <string name="bottom_tab_account">Cuenta</string>
+
+    <string name="main_review_success">App evaluada</string>
+    <!-- Main Activity  (BOTTOM)-->
+</resources>

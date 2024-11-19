@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/tag_container"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/color_white"
+    android:theme="@style/Theme.PASE">
+
+    <ImageView
+        android:id="@+id/iv_background"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        android:layout_marginStart="@dimen/space_16"
+        app:layout_constraintTop_toTopOf="parent"
+        android:src="@drawable/background_circle_gray"/>
+    <ImageView
+        android:id="@+id/iv_car"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/space_22"
+        android:src="@drawable/ic_blue_car_no_background"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/tv_tag_name"
+        style="@style/TextAppearance.App.Subtitle.Bold"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/space_29"
+        android:layout_marginTop="@dimen/space_16"
+        app:layout_constraintStart_toEndOf="@id/iv_car"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:text="Vitara" />
+
+    <TextView
+        android:id="@+id/tv_tag_suffix"
+        style="@style/TextAppearance.App.Subtitle.Bold.Muted"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/space_29"
+        app:layout_constraintStart_toEndOf="@id/iv_car"
+        app:layout_constraintTop_toBottomOf="@id/tv_tag_name"
+        tools:text="IMDM" />
+
+    <TextView
+        android:id="@+id/tv_tag_number"
+        style="@style/TextAppearance.App.Muted.Subtitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/space_2"
+        app:layout_constraintStart_toEndOf="@id/tv_tag_suffix"
+        app:layout_constraintTop_toBottomOf="@id/tv_tag_name"
+        tools:text="12354896-2" />
+
+    <ImageView
+        android:id="@+id/iv_tag_status"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/space_29"
+        android:layout_marginTop="@dimen/space_6"
+        android:src="@drawable/ic_circle_small_green"
+        app:layout_constraintStart_toEndOf="@id/iv_car"
+        app:layout_constraintTop_toBottomOf="@id/tv_tag_suffix" />
+
+    <TextView
+        android:id="@+id/tv_tag_method"
+        style="@style/TextAppearance.App.Muted.Subtitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/space_4"
+        android:paddingBottom="@dimen/space_16"
+        app:layout_constraintStart_toEndOf="@id/iv_tag_status"
+        app:layout_constraintTop_toBottomOf="@id/tv_tag_suffix"
+        tools:text="12354896-2" />
+
+
+    <ImageView
+        android:id="@+id/iv_tag_selected"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="@dimen/space_18"
+        android:src="@drawable/ic_check_circle"
+        android:visibility="gone"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+</androidx.constraintlayout.widget.ConstraintLayout>

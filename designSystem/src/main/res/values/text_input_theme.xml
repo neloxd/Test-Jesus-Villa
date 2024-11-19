@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <!-- Normal Input -->
+    <style name="Widget.App.TextInputLayout" parent="Widget.Material3.TextInputLayout.OutlinedBox">
+        <item name="materialThemeOverlay">@style/ThemeOverlay.App.Pase.TextInputLayout</item>
+        <item name="shapeAppearance">@style/ShapeAppearance.App.TextInputLayout</item>
+        <item name="errorTextAppearance">@style/TextAppearance.App.Error</item>
+        <item name="helperTextTextAppearance">@style/TextAppearance.App.Muted.Label</item>
+        <item name="helperTextTextColor">@color/color_text_muted</item>
+        <item name="endIconTint">@color/color_text_muted</item>
+        <item name="startIconTint">@color/primary_color</item>
+        <item name="hintTextColor">@color/color_border</item>
+    </style>
+
+    <style name="Widget.App.TextInputLayout.Disable" parent="Widget.Material3.TextInputLayout.OutlinedBox">
+        <item name="materialThemeOverlay">@style/ThemeOverlay.App.Pase.TextInputLayout</item>
+        <item name="shapeAppearance">@style/ShapeAppearance.App.TextInputLayout</item>
+        <item name="errorTextAppearance">@style/TextAppearance.App.Error</item>
+    </style>
+
+    <!-- Input With Left Icon -->
+    <style name="Widget.App.TextInputLayout.NoBorder" parent="Widget.Material3.TextInputLayout.OutlinedBox">
+        <item name="materialThemeOverlay">@style/ThemeOverlay.App.Pase.TextInputLayout.NoBorder
+        </item>
+        <item name="shapeAppearance">@style/ShapeAppearance.App.TextInputLayout</item>
+        <item name="errorTextAppearance">@style/TextAppearance.App.Error</item>
+    </style>
+
+    <!-- Dropdown Input -->
+    <style name="Widget.App.Dropdown" parent="Widget.Material3.TextInputLayout.OutlinedBox.ExposedDropdownMenu">
+        <item name="boxBackgroundColor">@color/white</item>
+        <item name="endIconDrawable">@drawable/ic_keyboard_arrow_down</item>
+        <item name="boxStrokeColor">@color/primary_color</item>
+        <item name="endIconTint">@color/color_border</item>
+        <item name="materialThemeOverlay">@style/ThemeOverlay.App.Pase.TextInputLayout</item>
+        <item name="errorTextAppearance">@style/TextAppearance.App.Error</item>
+        <item name="shapeAppearance">@style/ShapeAppearance.App.TextInputLayout</item>
+        <item name="hintTextColor">@color/color_border</item>
+    </style>
+
+    <style name="ThemeOverlay.App.Pase.TextInputLayout" parent="">
+        <item name="colorPrimary">@color/primary_color</item>
+        <item name="colorOutline">@color/color_border</item>
+        <item name="colorError">@color/color_error</item>
+        <item name="editTextStyle">@style/Widget.App.TextInputEditText</item>
+    </style>
+
+    <style name="ThemeOverlay.App.Pase.TextInputLayout.NoBorder" parent="">
+        <item name="colorPrimary">@android:color/transparent</item>
+        <item name="colorOutline">@android:color/transparent</item>
+        <item name="colorError">@android:color/transparent</item>
+        <item name="editTextStyle">@style/Widget.App.TextInputEditText</item>
+    </style>
+
+    <style name="Widget.App.TextInputEditText" parent="Widget.Material3.TextInputEditText.OutlinedBox">
+        <item name="android:padding">@dimen/space_8</item>
+        <item name="android:textAppearance">@style/TextAppearance.App.TextInputEditText</item>
+        <item name="android:textColor">@color/color_black</item>
+        <item name="android:textColorHint">@color/color_border</item>
+    </style>
+
+    <style name="ShapeAppearance.App.TextInputLayout" parent="ShapeAppearance.MaterialComponents.SmallComponent">
+        <item name="cornerFamily">rounded</item>
+        <item name="cornerSize">@dimen/space_8</item>
+    </style>
+
+    <style name="Widget.App.Dropdown.AutoComplete" parent="Widget.Material3.AutoCompleteTextView.OutlinedBox">
+        <item name="android:popupBackground">@drawable/dropdown_background</item>
+        <item name="colorOnSurface">@color/dropdown_item_selector</item>
+        <item name="android:textColor">@color/black</item>
+        <item name="android:dropDownSelector">@color/dropdown_item_selector</item>
+    </style>
+
+    <style name="Widget.AppCompat.DropDownItem.Spinner" parent="RtlOverlay.Widget.AppCompat.Search.DropDown.Text" />
+</resources>

@@ -1,0 +1,172 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@color/white"
+    android:padding="@dimen/space_16">
+
+    <TextView
+        android:id="@+id/tvTitle"
+        android:layout_width="@dimen/generic_0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/space_16"
+        style="@style/TextAppearance.App.Subtitle.Bold"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:text="@string/text_scheme_available_payment"/>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/cvPospago"
+        android:layout_width="@dimen/generic_0dp"
+        android:layout_height="wrap_content"
+        android:background="@drawable/shape_neutral_background"
+        android:padding="@dimen/space_16"
+        android:layout_marginTop="@dimen/space_16"
+        app:layout_constraintTop_toBottomOf="@+id/tvTitle"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent">
+
+        <TextView
+            android:id="@+id/tvPospagoTitle"
+            android:layout_width="@dimen/generic_0dp"
+            android:layout_height="wrap_content"
+            style="@style/TextAppearance.App.Title.Medium.Black"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            android:text="@string/text_pospago"/>
+
+        <TextView
+            android:id="@+id/tvPospagoSubTitle"
+            android:layout_width="@dimen/generic_0dp"
+            android:layout_height="wrap_content"
+            style="@style/TextAppearance.App.TextView"
+            android:layout_marginTop="@dimen/dim_4"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/tvPospagoTitle"
+            android:text="@string/text_pospago_subtitle"/>
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/tvFirst"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:text="@string/text_pospago_first_message"
+            android:layout_marginTop="@dimen/dim_12"
+            app:layout_constraintTop_toBottomOf="@+id/tvPospagoSubTitle"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            android:drawableStart="@drawable/ic_check_success"
+            android:drawablePadding="@dimen/dim_8"/>
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/tvSecond"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:text="@string/text_pospago_second_message"
+            android:layout_marginTop="@dimen/dim_4"
+            app:layout_constraintTop_toBottomOf="@+id/tvFirst"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            android:drawableStart="@drawable/ic_check_success"
+            android:drawablePadding="@dimen/dim_8"/>
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/btnDomiciliar"
+            android:layout_width="@dimen/generic_0dp"
+            android:layout_height="wrap_content"
+            android:text="@string/button_domicliar"
+            android:textSize="@dimen/size_16"
+            app:icon="@drawable/ic_credit_card"
+            app:iconTint="@color/white"
+            app:iconGravity="textStart"
+            app:iconSize="@dimen/size_24"
+            app:layout_constraintVertical_bias="1"
+            android:layout_marginTop="@dimen/space_16"
+            app:layout_constraintTop_toBottomOf="@+id/tvSecond"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"/>
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/cvPrepaid"
+        android:layout_width="@dimen/generic_0dp"
+        android:layout_height="wrap_content"
+        android:background="@drawable/shape_neutral_background"
+        android:padding="@dimen/space_16"
+        android:layout_marginTop="@dimen/space_16"
+        app:layout_constraintTop_toBottomOf="@+id/cvPospago"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent">
+
+        <TextView
+            android:id="@+id/tvPrepaidTitle"
+            android:layout_width="@dimen/generic_0dp"
+            android:layout_height="wrap_content"
+            style="@style/TextAppearance.App.Title.Medium.Black"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            android:text="@string/text_prepaid"/>
+
+        <TextView
+            android:id="@+id/tvPrepaidSubTitle"
+            android:layout_width="@dimen/generic_0dp"
+            android:layout_height="wrap_content"
+            style="@style/TextAppearance.App.TextView"
+            android:layout_marginTop="@dimen/dim_4"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/tvPrepaidTitle"
+            android:text="@string/text_prepaid_subtitle"/>
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/tvMessage"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:text="@string/text_prepaid_first_message"
+            android:layout_marginTop="@dimen/dim_12"
+            app:layout_constraintTop_toBottomOf="@+id/tvPrepaidSubTitle"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            android:drawableStart="@drawable/ic_check_success"
+            android:drawablePadding="@dimen/dim_8"/>
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/btnRecharge"
+            android:layout_width="@dimen/generic_0dp"
+            android:layout_height="wrap_content"
+            android:text="@string/button_recharge"
+            android:textSize="@dimen/size_16"
+            app:icon="@drawable/ic_paid"
+            app:iconTint="@color/white"
+            app:iconGravity="textStart"
+            app:iconSize="@dimen/size_24"
+            app:layout_constraintVertical_bias="1"
+            android:layout_marginTop="@dimen/space_16"
+            app:layout_constraintTop_toBottomOf="@+id/tvMessage"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"/>
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/tvOtherLater"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/text_other_later"
+        android:padding="@dimen/size_16"
+        style="@style/TextAppearance.App.Bold.Link"
+        app:layout_constraintVertical_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/cvPrepaid"/>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

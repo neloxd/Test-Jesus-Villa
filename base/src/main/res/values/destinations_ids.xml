@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <item name="dest_authentication" type="id" />
+    <item name="dest_home" type="id" />
+    <item name="dest_account" type="id" />
+    <item name="dest_contact" type="id" />
+    <item name="tag_validation" type="id" />
+    <item name="dest_trip" type="id" />
+    <item name="dest_tax_data" type="id"/>
+    <item name="dest_tag_detail" type="id" />
+</resources>

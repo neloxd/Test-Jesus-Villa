@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/edit_tag_graph"
+    app:startDestination="@id/editTagFragment">
+
+    <fragment
+        android:id="@+id/editTagFragment"
+        android:name="com.jesusvilla.test.editTag.ui.EditTagFragment"
+        android:label="fragment_edit_tag"
+        tools:layout="@layout/fragment_edit_tag" />
+
+</navigation>

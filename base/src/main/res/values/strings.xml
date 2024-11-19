@@ -1,0 +1,222 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!--Tag Texts Begin-->
+    <string name="tag_active">Activo</string>
+    <string name="tag_inactive">Inactivo</string>
+    <!--Tag Texts Ended-->
+
+    <string name="defaults_field_required_error">Campo requerido</string>
+    <string name="defaults_field_required_error_card">Números inválidos</string>
+    <string name="defaults_field_required_postal_code">Deben ser 5 dígitos</string>
+    <string name="defaults_field_required_ext_number">No usar caracteres especiales</string>
+    <string name="defaults_email_bad_formatted_error">Formato de email inválido</string>
+    <string name="defaults_email_bad_formatted_error_sing_up">El email no es válido</string>
+    <string name="defaults_field_invalid_tag_number">Número de tag inválido</string>
+    <string name="defaults_quartet_bad_formatted_error">nnnn</string>
+    <string name="defaults_service_not_available_error">Servicio no disponible</string>
+    <string name="defaults_invalid_password_entry">La contraseña no es válida</string>
+    <string name="defaults_invalid_phone_error">Número celular inválido</string>
+    <string name="invalid_register_same_phone_error">El nuevo número es igual al actual</string>
+    <string name="defaults_invalid_tdc_field_error">Tarjeta inválida</string>
+    <string name="defaults_invalid_rfc_field_error">RFC inválido</string>
+    <string name="defaults_invalid_expiration_date_field_error">Fecha inválida</string>
+    <string name="defaults_invalid_ccv_field_error">Deben ser 3 dígitos</string>
+    <string name="defaults_incorrect_phone_error">Teléfono incorrecto</string>
+    <string name="defaults_incorrect_phone_error_match">El nuevo teléfono y el actual son iguales</string>
+    <string name="defaults_incorrect_phone_error_understood">Entendido</string>
+    <string name="defaults_incorrect_phone_attention">Atención</string>
+    <string name="defaults_consulting_info">Consultando información...</string>
+
+    <!--ButtonSheetDialog Activate Token Begin -->
+    <string name="bottom_sheet_cancel_activation_token_title">¿Cancelar activación del token?</string>
+    <string name="bottom_sheet_cancel_activation_token_content_one">Puedes activarlo en otro momento.</string>
+    <string name="bottom_sheet_cancel_activation_token_content_two">Será necesario para realizar operaciones \n sensibles.</string>
+    <string name="bottom_sheet_cancel_activation_token_button_yes">Sí, cancelar</string>
+    <string name="bottom_sheet_cancel_activation_token_content_back">Regresar</string>
+    <!--ButtonSheetDialog Ended -->
+
+    <!--ButtonSheetDialog Activate Biometrics Begin -->
+    <string name="bottom_sheet_disable_activation_biometrics_title">¿Inactivar biométricos?</string>
+    <string name="bottom_sheet_disable_activation_biometrics_content_one">El token de operaciones seguirá activo.</string>
+    <string name="bottom_sheet_disable_activation_biometrics_content_two">Te recomendamos activar tus biométricos \n para una mejor experiencia.</string>
+    <string name="bottom_sheet_disable_activation_biometrics_button_yes">Sí, inactivar</string>
+    <string name="bottom_sheet_disable_activation_biometrics_content_back">Cancelar</string>
+    <!--ButtonSheetDialog Ended -->
+
+    <!--DialogTokenActivatedFragment Begin-->
+    <string name="dialog_token_activated_activate">Tu token se ha activado</string>
+    <string name="dialog_token_activated_biometric_toast">Token de operaciones con biometría activado.</string>
+    <string name="dialog_token_activated_activate_btn_biometric">Activar token biométrico</string>
+    <string name="dialog_token_activated_activate_btn_finish">Finalizar</string>
+    <string name="dialog_token_activated_activate_security">Para mayor seguridad puedes activar la lectura biométrica para generar el token.</string>
+    <string name="dialog_message_device_without_biometrics">Accede a todas las funciones que Tu Tag PASE ofrece, con el token de operaciones tu seguridad está garantizada.</string>
+    <string name="dialog_token_activated_title_change_phone_number">Cambiar teléfono</string>
+    <string name="dialog_token_activated_title_activate">Activa tu token</string>
+    <string name="dialog_token_activated_toast_resend">Código reenviado</string>
+    <string name="dialog_token_activated_title_edit_phone_number">Editar celular</string>
+    <string name="dialog_token_activated_title">Activar token operaciones</string>
+    <string name="dialog_token_activated_generic_dialog_title">Confirmación</string>
+    <string name="dialog_token_activated_generic_dialog_body">"¿Estás seguro de cancelar la activacion del token? \n\nEn operaciones  sensibles será necesario que completes esta activación."</string>
+    <!--DialogTokenActivatedFragment Ended-->
+
+    <!--DialogFinishOperation Begin-->
+    <string name="dialog_finished_success">Tu token de operaciones ha sido activado exitosamente</string>
+    <string name="dialog_finished_activate_biometric_description">Si lo deseas y para una mayor seguridad puedes activar el mecanismo de lectura de tu biométrico para generar el token de operación. No recolectamos ningún tipo de información biométrica, el mecanismo utiliza la validación del propio teléfono.</string>
+    <string name="dialog_finished_activate_biometric">Activar biométrico para generar el token</string>
+    <!--DialogFinishOperation Ended-->
+
+    <!--DialogMainTokenOperation Begin-->
+    <string name="dialog_token_main_description">Para garantizar tu seguridad dentro de la App móvil y sitio web PASE, ahora será necesario la captura de un token de operación como autorización para realizar operaciones sensibles.\n\nPara tener acceso al token será necesaria la verificación del teléfono y realizar la activación del mismo a través de un código de confirmación y activación, por lo que te sugerimos que tu teléfono tenga acceso a la red celular.\n\nEl token solo puede  generarse en este dispositivo, por lo que si se realiza cambio de equipo o número celular, se deberá realizar la actualización correspondiente en la cuenta.  </string>
+    <string name="dialog_token_main_has_code">Ya tengo un código</string>
+    <!-- new changes -->
+    <string name="dialog_token_main_title">Tu token de operaciones garantiza tu \n seguridad en PASE</string>
+    <string name="dialog_token_main_content_part_one">Para activarlo, deberás verificar tu número celular a través de un código.</string>
+    <string name="dialog_token_main_content_part_two">Si cambias de dispositivo o de celular, deberás volver a activar tu token.</string>
+    <string name="dialog_token_main_button">Activar token</string>
+    <!--DialogMainTokenOperation Ended-->
+
+    <!--DialogChangePhone Begin-->
+    <string name="dialog_change_phone_description">Te enviaremos un mensaje de texto (SMS) con el código de activación.</string>
+    <string name="dialog_change_phone_to_register">Teléfono a registrar</string>
+    <string name="dialog_change_phone_current_password">Contraseña actual</string>
+    <string name="dialog_change_phone_canceled">Cambio de teléfono cancelado</string>
+    <string name="dialog_change_phone_forget_password">¿Olvidaste tu contraseña?</string>
+    <string name="login_forget_password_link">main/cuenta/solicitarecuperacion</string>
+
+
+    <!-- new changes -->
+    <string name="dialog_change_phone_txb_phone_number_title">Número celular</string>
+    <string name="dialog_change_phone_txb_phone_number_hint">10 dígitos</string>
+    <string name="dialog_change_phone_info">El código tiene una vigencia de 2 minutos.</string>
+    <string name="dialog_change_phone_button_send_code">Enviar código</string>
+    <string name="dialog_change_phone_txv_title">¿No es tu teléfono?</string>
+    <string name="dialog_change_phone_txv_container">Cambiar número celular</string>
+    <!--DialogChangePhone Ended-->
+
+    <!--Dialog Validate token Begin-->
+    <string name="dialog_validate_token_description">Para activar tu token de operaciones te enviaremos un mensaje SMS con el código de confirmación, este código tiene una vigencia de 2 minutos.</string>
+    <string name="dialog_validate_token_phone_to_confirm">Teléfono a confirmar</string>
+    <string name="dialog_validate_token_check_confirm_number">Captura el código de confirmación enviado</string>
+    <string name="dialog_validate_token_confirm_code_label">Código de confirmación</string>
+    <string name="dialog_validate_token_send_code">Enviar código</string>
+    <string name="dialog_validate_token_wrong_phone_number">¿El teléfono no es el correcto?</string>
+    <string name="dialog_validate_token_change_phone_number">Cambiar teléfono</string>
+    <string name="dialog_validate_token_re_send_code">Reenviar código</string>
+    <string name="dialog_validate_token_re_send_code_time">Reenviar código en %1$s s</string>
+    <string name="dialog_validate_token_Error_process">Error al completar el proceso para activar el token de operación</string>
+    <string name="dialog_validate_token_permission_biometric_error">Ocurrió un error en la autenticación con la biometría</string>
+    <string name="dialog_validate_token_permission_biometric_failed">Falló la autenticación con la biometría</string>
+    <string name="dialog_validate_token_permission_dialog_title">Valida tu huella para continuar</string>
+    <string name="dialog_validate_token_permission_dialog_sub_title">Valida tu huella para continuar</string>
+    <string name="dialog_validate_token_permission_toast_success">Autenticación con biometría activada</string>
+    <string name="dialog_validate_token_canceled">Activación token de operaciones cancelada</string>
+    <string name="dialog_validate_token_code_verification">Reenviar código en %s s</string>
+    <string name="dialog_validate_token_code_verification_without_num">Reenviar código</string>
+    <string name="dialog_validate_token_code_indications">Ingresa el código de 5 dígitos que enviamos al número celular:</string>
+    <string name="dialog_validate_token_code_label_code">Código de activación</string>
+    <string name="dialog_validate_token_code_label_code_question">¿No has recibido el código?</string>
+    <string name="dialog_validate_token_code_btn_activate">Activar</string>
+    <!--Dialog Validate token Ended-->
+
+    <!--Dialog Generated Token Begin-->
+    <string name="dialog_generated_token_title">Token de operaciones</string>
+    <string name="dialog_generated_token_description_capture">Captura este token para continuar con tu operación <b>en el portal de PASE.</b></string>
+    <string name="dialog_generated_token_validate_biometric">Para continuar solo es necesario que valides tu huella, el token de operación se genera automáticamente</string>
+    <string name="dialog_generated_token_code">* * * * * *</string>
+    <string name="dialog_generated_token_title_biometrics">Biométricos</string>
+    <string name="dialog_generated_token_biometrics_intructions">La lectura biométrica otorga mayor seguridad a tu token de operaciones.</string>
+    <string name="dialog_generated_token_biometrics_title_activate_token">Token biométrico</string>
+    <string name="dialog_generated_token_next_code">El siguiente código se genera en: </string>
+    <string name="dialog_generated_token_next_code_timer">00:00 s</string>
+    <string name="dialog_generated_token_end_token">Finalizar</string>
+    <string name="dialog_generated_token_succes_toast">Lectura biométrica inactivada.</string>
+    <!--Dialog Validate token Ended-->
+    <string name="dialog_operation_token_title">Token de operaciones</string>
+    <string name="dialog_operation_token_description_capture_one">Para continuar, es necesario validar tus biométricos.</string>
+    <string name="dialog_operation_token_description_capture_two">El token se generará automáticamente.</string>
+    <string name="dialog_operation_token_code">* * * * * *</string>
+    <string name="dialog_operation_token_continue">Continuar</string>
+    <string name="dialog_operation_token_cancel">Cancelar</string>
+
+    <!--Dialog Opertation Token Begin-->
+
+    <!--Dialog Opertation Token Ended-->
+
+    <!-- Saving Info Dialog (TOP) -->
+    <string name="saving_info_dialog_title">Guardando información ...</string>
+    <!-- Saving Info Dialog (BOTTOM) -->
+
+    <!-- Consulting Info Dialog (TOP) -->
+    <string name="consulting_info_dialog_title">Consultando información ...</string>
+    <!-- Consulting Info Dialog (BOTTOM) -->
+
+
+    <!-- Fragment Notifications Permisson Dialog (TOP) -->
+    <string name="fragment_notifications_permisson_dialog_image_view_description">Campana notificaciones</string>
+    <string name="fragment_notifications_permisson_dialog_title">Mantente siempre informado</string>
+    <string name="fragment_notifications_permisson_dialog_body">Tu Tag PASE te envía notificaciones de tus cruces, recargas, estatus de tus aclaraciones, entre otros avisos.\n\nTe recomendamos activar las notificaciones de la aplicación para estar siempre informado.</string>
+    <!-- Fragment Notifications Permisson Dialog (BOTTOM) -->
+
+    <!-- Fragment Change Password Dialog (TOP) -->
+    <string name="fragment_change_password_dialog_actual_password">Contraseña actual</string>
+    <string name="fragment_change_password_dialog_new_password">Nueva contraseña</string>
+    <string name="fragment_change_password_dialog_confirm_password">Confirmar contraseña</string>
+    <string name="fragment_change_password_dialog_password_specs">Tu contraseña debe contener al menos 8 caracteres e incluir al menos un número o un símbolo</string>
+    <string name="fragment_change_password_dialog_password_info">Te recomendamos una contraseña formada por dos palabras que no estén relacionadas, por ejemplo:</string>
+    <string name="fragment_change_password_dialog_password_sample">rapido!Incognito</string>
+    <string name="fragment_change_password_dialog_password_current_error">Requerido</string>
+    <string name="fragment_change_password_dialog_password_invalid">La contraseña no es válida</string>
+    <string name="fragment_change_password_dialog_password_must_be_captured">Las contraseñas deben ser capturadas</string>
+    <string name="fragment_change_password_dialog_password_match_error">Las contraseñas no coinciden</string>
+    <string name="fragment_change_password_dialog_password_success">Las contraseña fue cambiada con éxito</string>
+    <string name="fragment_change_password_dialog_password_error">Error</string>
+    <string name="fragment_change_password_dialog_password_error_body">Contraseña actual incorrecta.</string>
+    <!-- Fragment Change Password Dialog (BOTTOM) -->
+
+    <!-- Fragment Change Password Dialog (TOP) -->
+    <string name="progress_dialog_generic_message">Cargando...</string>
+
+
+    <!-- Modal (TOP) -->
+    <string name="modal_title">Atención</string>
+    <string name="modal_btn_text">Entendido</string>
+    <!-- Modal (BOTTOM)-->
+
+    <!-- Text Input Layout Custom (TOP) -->
+    <string name="text_input_layout_custom_first_validation">8 caracteres</string>
+    <string name="text_input_layout_custom_second_validation">1 mayúscula y minúscula</string>
+    <string name="text_input_layout_custom_third_validation">1 número</string>
+    <string name="text_input_layout_custom_fourth_validation">1 símbolo (!@#&amp;*)</string>
+
+    <!-- Text Input Layout Custom (BOTTOM) -->
+
+    <!-- Error Internet(TOP) -->
+    <string name="modal_title_error_internet">Sin conexión a Internet</string>
+    <string name="modal_message_error_internet">Revisa tu conexión e intenta de nuevo</string>
+    <!-- Internet (BUTTOM)-->
+
+    <!-- Modal Information  (TOP) -->
+    <string name="modal_change_phone_number_title">Tu número celular y tu token están ligados</string>
+    <string name="modal_change_phone_number_body">Al cambiar tu número celular deberás activar nuevamente tu token de operaciones.</string>
+    <string name="modal_change_phone_number_btn_next">Continuar</string>
+    <string name="modal_change_phone_number_btn_back">Regresar</string>
+    <!-- Modal (BOTTOM)-->
+
+    <!-- LocateTagFragment -->
+    <string name="fragment_locate_tag_title">Localiza el número de tu TAG PASE</string>
+    <string name="fragment_locate_tag_subtitle">Al frente de tu Tag en la parte inferior, como se muestra en las imágenes:</string>
+    <string name="fragment_locate_tag_understand">Entendido</string>
+
+    <!-- Edit Tag Fragment (TOP) -->
+    <string name="edit_tag_fragment_title">Editar Tag</string>
+    <string name="edit_tag_fragment_number_tag">Número de tag</string>
+    <string name="edit_tag_fragment_color_preference">Color de preferencia:</string>
+    <string name="edit_tag_fragment_description">Esta imagen es sólo ilustrativa. Si deseas hacer un cambio en la configuración de tu Tag, ingresa desde tu computadora al portal web pase.com.mx</string>
+    <string name="edit_tag_fragment_pase_link">pase.com.mx</string>
+    <string name="edit_tag_fragment_alias">Alias del Tag</string>
+    <string name="edit_tag_fragment_save_btn">Guardar</string>
+    <string name="edit_tag_fragment_cancel_btn">Cancelar</string>
+    <string name="edit_tag_fragment_success_toast">Cambios guardados exitosamente.</string>
+    <!-- Edit Tag Fragment (BOTTOM) -->
+
+</resources>

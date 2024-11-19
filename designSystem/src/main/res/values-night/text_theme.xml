@@ -1,0 +1,152 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <style name="Widget.App.TextView" parent="Widget.MaterialComponents.TextView">
+        <item name="android:textAppearance">@style/TextAppearance.App.TextView</item>
+    </style>
+
+    <style name="TextAppearance.App.TextView" parent="">
+        <item name="android:textSize">@dimen/size_16</item>
+        <item name="android:fontFamily">@font/roboto_regular</item>
+        <item name="android:textColor">@color/color_black</item>
+    </style>
+
+    <style name="TextAppearance.App.TextView.White" parent="">
+        <item name="android:textSize">@dimen/size_16</item>
+        <item name="android:fontFamily">@font/roboto_regular</item>
+        <item name="android:textColor">@color/color_white</item>
+    </style>
+
+    <style name="TextAppearance.App.Title" parent="TextAppearance.App.TextView">
+        <item name="android:textSize">@dimen/size_26</item>
+        <item name="android:fontFamily">@font/roboto_bold</item>
+    </style>
+
+    <style name="TextAppearance.App.Title.Balance" parent="TextAppearance.App.TextView">
+        <item name="android:textSize">@dimen/size_22</item>
+        <item name="android:fontFamily">@font/roboto_bold</item>
+    </style>
+
+    <style name="TextAppearance.App.Title.Token" parent="TextAppearance.App.TextView">
+        <item name="android:textSize">@dimen/size_24</item>
+        <item name="android:fontFamily">@font/roboto_bold</item>
+    </style>
+
+    <style name="TextAppearance.App.Title.Card.Number" parent="TextAppearance.App.TextView">
+        <item name="android:textSize">@dimen/size_18</item>
+        <item name="android:fontFamily">@font/roboto_bold</item>
+    </style>
+
+    <style name="TextAppearance.App.Title.Medium.White" parent="TextAppearance.App.TextView">
+        <item name="android:textSize">@dimen/size_20</item>
+        <item name="android:fontFamily">@font/roboto_bold</item>
+        <item name="android:textColor">@color/color_white</item>
+    </style>
+
+    <style name="TextAppearance.App.Title.Medium.Black" parent="TextAppearance.App.TextView">
+        <item name="android:textSize">@dimen/size_20</item>
+        <item name="android:fontFamily">@font/roboto_bold</item>
+        <item name="android:textColor">@color/color_black</item>
+    </style>
+
+    <style name="TextAppearance.App.Input.Title" parent="TextAppearance.App.TextView">
+        <item name="android:textSize">@dimen/size_14</item>
+        <item name="android:fontFamily">@font/roboto_bold</item>
+    </style>
+
+    <style name="TextAppearance.App.Input.Title.White" parent="TextAppearance.App.TextView">
+        <item name="android:textSize">@dimen/size_14</item>
+        <item name="android:fontFamily">@font/roboto_bold</item>
+        <item name="android:textColor">@color/color_white</item>
+    </style>
+
+    <style name="TextAppearance.App.Input.Title.Muted" parent="TextAppearance.App.TextView">
+        <item name="android:textSize">@dimen/size_14</item>
+        <item name="android:fontFamily">@font/roboto_bold</item>
+        <item name="android:textColor">@color/color_text_muted</item>
+    </style>
+
+    <style name="TextAppearance.App.Label.Small.Muted" parent="TextAppearance.App.TextView">
+        <item name="android:textSize">@dimen/size_12</item>
+        <item name="android:fontFamily">@font/roboto_regular</item>
+        <item name="android:textColor">@color/color_text_muted</item>
+    </style>
+
+    <style name="TextAppearance.App.Label.Medium.Muted" parent="TextAppearance.App.TextView">
+        <item name="android:textSize">@dimen/size_14</item>
+        <item name="android:fontFamily">@font/roboto_regular</item>
+        <item name="android:textColor">@color/color_text_muted</item>
+    </style>
+
+    <style name="TextAppearance.App.Bold.Link.Small" parent="TextAppearance.App.TextView">
+        <item name="android:textSize">@dimen/size_14</item>
+        <item name="android:fontFamily">@font/roboto_bold</item>
+        <item name="android:textColor">@color/primary_color</item>
+    </style>
+
+
+    <style name="TextAppearance.App.Muted.Subtitle" parent="TextAppearance.App.TextView">
+        <item name="android:textSize">@dimen/size_16</item>
+        <item name="android:fontFamily">@font/roboto_regular</item>
+        <item name="android:textColor">@color/color_text_muted</item>
+    </style>
+
+    <style name="TextAppearance.App.Subtitle.Bold" parent="TextAppearance.App.TextView">
+        <item name="android:textSize">@dimen/size_16</item>
+        <item name="android:fontFamily">@font/roboto_bold</item>
+    </style>
+
+    <style name="TextAppearance.App.Subtitle.Bold.Muted" parent="TextAppearance.App.TextView">
+        <item name="android:textSize">@dimen/size_16</item>
+        <item name="android:fontFamily">@font/roboto_bold</item>
+        <item name="android:textColor">@color/color_text_muted</item>
+    </style>
+
+    <style name="TextAppearance.App.Subtitle.Bold.Gray" parent="TextAppearance.App.TextView">
+        <item name="android:textSize">@dimen/size_16</item>
+        <item name="android:fontFamily">@font/roboto_bold</item>
+        <item name="android:textColor">@color/color_border</item>
+    </style>
+
+    <style name="TextAppearance.App.Subtitle.Gray" parent="TextAppearance.App.TextView">
+        <item name="android:textSize">@dimen/size_16</item>
+        <item name="android:fontFamily">@font/roboto_regular</item>
+        <item name="android:textColor">@color/color_border</item>
+    </style>
+
+    <style name="TextAppearance.App.Muted.Label" parent="TextAppearance.App.TextView">
+        <item name="android:textSize">@dimen/size_14</item>
+        <item name="android:fontFamily">@font/roboto_regular</item>
+        <item name="android:textColor">@color/color_text_muted</item>
+    </style>
+
+    <style name="TextAppearance.App.Label.Small" parent="TextAppearance.App.TextView">
+        <item name="android:textSize">@dimen/size_12</item>
+        <item name="android:fontFamily">@font/roboto_regular</item>
+    </style>
+
+    <style name="TextAppearance.App.Label.Small.White" parent="TextAppearance.App.TextView">
+        <item name="android:textSize">@dimen/size_12</item>
+        <item name="android:fontFamily">@font/roboto_regular</item>
+        <item name="android:textColor">@color/color_white</item>
+    </style>
+
+    <style name="TextAppearance.App.Bold.Link" parent="TextAppearance.App.TextView">
+        <item name="android:textSize">@dimen/size_16</item>
+        <item name="android:fontFamily">@font/roboto_bold</item>
+        <item name="android:textColor">@color/primary_color</item>
+    </style>
+
+    <style name="TextAppearance.App.Label" parent="TextAppearance.App.TextView">
+        <item name="android:textSize">@dimen/size_14</item>
+    </style>
+
+    <style name="TextAppearance.App.Error" parent="TextAppearance.App.TextView">
+        <item name="android:textColor">@color/color_error</item>
+        <item name="android:textSize">@dimen/size_14</item>
+    </style>
+
+    <style name="TextAppearance.App.TextInputEditText" parent="" >
+        <item name="android:textSize">@dimen/size_16</item>
+    </style>
+</resources>

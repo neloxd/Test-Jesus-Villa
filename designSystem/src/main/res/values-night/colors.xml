@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="blue">#222C30</color>
+    <color name="green_light">#222C30</color>
+    <color name="window_background">#2F3D43</color>
+    <color name="backgroundDialog">#3A3A3A</color>
+    <color name="secondary_icon">@color/gray_accent</color>
+    <color name="colorTabText">@color/gray_accent</color>
+    <color name="colorListHeader">#3F4447</color>
+    <color name="showcase_mask">#3F4447</color>
+    <color name="last_item_color">@color/white</color>
+    <color name="text_color_inverse">#DFDFDF</color>
+    <color name="rappi_logo">#fff</color>
+    <color name="colorSecondary">#3F4447</color>
+    <color name="buttonInverseBackground">#70A83B</color>
+    <color name="sidebar_background">#3D4245</color>
+    <color name="sidebar_item">#DFDFE9</color>
+    <color name="background_primary">@color/gray_primary</color>
+    <color name="background_login">@color/gray_primary</color>
+    <color name="background_select_payment_">@color/gray_solid</color>
+    <color name="colorButtonRechargePayment">#FFB7B7B7</color>
+    <color name="textTitleDialog">#E8EDDF</color>
+    <color name="textToastChangeEmail">#000</color>
+    <color name="bottom_button_bar">#222C30</color>
+    <color name="color_warning_light">#FFFAD8</color>
+    <!-- NEW COLORS (TOP) -->
+    <color name="primary_color">#0046AD</color>
+    <color name="secondary_color">#7AB800</color>
+    <color name="enable_color">#D2D5D9</color>
+    <color name="enable_text">#5E646E</color>
+    <color name="color_border">#8B919A</color>
+    <color name="color_error">#E72D41</color>
+    <color name="color_white">#FFFFFF</color>
+    <color name="color_black">#000000</color>
+    <color name="color_text_muted">#5E646E</color>
+    <color name="primary_light">#F0F5FC</color>
+    <color name="neutral_color">#F7F8FA</color>
+    <color name="success_color_toast">#699E00</color>
+    <color name="error_color_toast">#D32222</color>
+    <color name="warning_color_toast">#222222</color>
+    <color name="color_gray_white">#EDEFF2</color>
+    <!-- NEW COLORS (BOTTOM) -->
+</resources>

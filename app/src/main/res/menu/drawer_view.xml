@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <group
+        android:id="@+id/drawer_menu_operation_token"
+        android:checkableBehavior="none">
+        <item
+            android:id="@+id/drawer_menu_item_operation_token"
+            android:icon="@drawable/shield_lock"
+            android:title="@string/drawer_token" />
+    </group>
+    <group
+        android:id="@+id/drawer_menu_parking_tickets"
+        android:checkableBehavior="none">
+        <item
+            android:id="@+id/drawer_menu_item_parking_tickets"
+            android:icon="@drawable/parking_ticket"
+            android:title="@string/drawer_parking_tickets" />
+    </group>
+    <group
+        android:id="@+id/drawer_menu_top"
+        android:checkableBehavior="none">
+        <item
+            android:id="@+id/drawer_menu_item_account"
+            android:icon="@drawable/ic_account_box"
+            android:title="@string/drawer_account" />
+        <item
+            android:id="@+id/drawer_menu_item_tax_data"
+            android:icon="@drawable/ic_tax_data"
+            android:title="@string/drawer_tax_data" />
+        <item
+            android:id="@+id/drawer_menu_item_payment_method"
+            android:icon="@drawable/ic_credit_card"
+            android:title="@string/drawer_payment_method" />
+        <item
+            android:id="@+id/drawer_menu_item_promotion"
+            android:icon="@drawable/ic_tdu_card"
+            android:title="@string/drawer_tdu_promotion" />
+        <item
+            android:id="@+id/drawer_menu_item_rewards"
+            android:icon="@drawable/ic_trophy"
+            android:title="@string/drawer_rewards"
+            android:visible="false" />
+    </group>
+    <group
+        android:id="@+id/drawer_menu_bottom"
+        android:checkableBehavior="none">
+        <item
+            android:id="@+id/drawer_menu_item_coverage"
+            android:icon="@drawable/ic_map_marker_radius"
+            android:title="@string/drawer_coverage" />
+        <item
+            android:id="@+id/drawer_menu_item_your_journey"
+            android:icon="@drawable/ic_your_journey"
+            android:title="@string/drawer_your_journey" />
+        <item
+            android:id="@+id/drawer_menu_item_contact"
+            android:icon="@drawable/ic_contact"
+            android:title="@string/drawer_contact" />
+        <item
+            android:id="@+id/drawer_menu_item_review"
+            android:icon="@drawable/ic_star_half"
+            android:title="@string/drawer_review" />
+    </group>
+</menu>

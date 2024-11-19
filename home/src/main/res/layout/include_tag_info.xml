@@ -1,0 +1,204 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.google.android.material.card.MaterialCardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/root_tag_info"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:theme="@style/Theme.PASE"
+    app:cardBackgroundColor="@color/color_white"
+    app:cardCornerRadius="@dimen/space_16"
+    app:cardElevation="@dimen/space_4"
+    app:cardUseCompatPadding="true"
+    app:layout_constraintEnd_toEndOf="parent"
+    app:layout_constraintStart_toStartOf="parent"
+    app:layout_constraintTop_toTopOf="parent"
+    app:strokeColor="@null"
+    app:strokeWidth="@dimen/space_0">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/containerTag"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginVertical="@dimen/space_24"
+            app:layout_constraintBottom_toTopOf="@+id/ll_buttons"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent">
+
+            <ImageView
+                android:id="@+id/iv_tag"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="@dimen/space_16"
+                android:src="@drawable/tag_imdm_activo"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toStartOf="@+id/guidelineTag"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <androidx.constraintlayout.widget.Guideline
+                android:id="@+id/guidelineTag"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                app:layout_constraintGuide_percent="0.50" />
+
+            <TextView
+                android:id="@+id/tvNewTag"
+                style="@style/TextAppearance.App.Muted.Label"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/tag_detail_fragment_new_tag"
+                android:visibility="gone"
+                app:layout_constraintBottom_toBottomOf="@id/iv_tag"
+                app:layout_constraintStart_toEndOf="@+id/ivNewStatus"
+                app:layout_constraintTop_toTopOf="@id/iv_tag"
+                tools:visibility="visible" />
+
+            <ImageView
+                android:id="@+id/ivNewStatus"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/ic_circle_small_gray"
+                android:visibility="gone"
+                app:layout_constraintBottom_toBottomOf="@id/tvNewTag"
+                app:layout_constraintStart_toEndOf="@+id/guidelineTag"
+                app:layout_constraintTop_toTopOf="@id/tvNewTag"
+                tools:visibility="visible" />
+
+
+            <ImageView
+                android:id="@+id/ivLogoVisa"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/space_12"
+                android:layout_marginEnd="@dimen/space_10"
+                android:src="@drawable/ic_visa"
+                app:layout_constraintStart_toEndOf="@+id/guidelineTag"
+                app:layout_constraintTop_toTopOf="@+id/iv_tag"
+                tools:visibility="visible" />
+
+            <TextView
+                android:id="@+id/tvTitle"
+                style="@style/TextAppearance.App.Title.Card.Number"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/space_6"
+
+                android:layout_marginTop="@dimen/space_12"
+                app:layout_constraintStart_toEndOf="@+id/ivLogoVisa"
+                app:layout_constraintTop_toTopOf="@id/iv_tag"
+                tools:text="....5781"
+                tools:visibility="visible" />
+
+            <androidx.legacy.widget.Space
+                android:id="@+id/spacerDetail"
+                android:layout_width="0dp"
+                android:layout_height="0dp"
+                android:backgroundTint="@color/red_error"
+                app:layout_constraintBottom_toTopOf="@+id/tv_tag_type"
+                app:layout_constraintEnd_toEndOf="@id/tvTitle"
+                app:layout_constraintStart_toEndOf="@id/guidelineTag"
+                app:layout_constraintTop_toBottomOf="@+id/tvTitle"
+                tools:visibility="visible" />
+
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/btn_add_tag"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/dim_8"
+                android:text="@string/home_fragment_add_tag"
+                android:textSize="@dimen/size_14"
+                android:visibility="gone"
+                app:layout_constraintBottom_toBottomOf="@id/iv_tag"
+                app:layout_constraintStart_toEndOf="@id/guidelineTag"
+                app:layout_constraintTop_toTopOf="@id/iv_tag" />
+
+            <ImageView
+                android:id="@+id/ivStatusTag"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/ic_circle_small_green"
+                app:layout_constraintBottom_toBottomOf="@id/tv_tag_type"
+                app:layout_constraintEnd_toStartOf="@+id/tv_tag_type"
+                app:layout_constraintStart_toEndOf="@+id/guidelineTag"
+                app:layout_constraintTop_toTopOf="@+id/tv_tag_type"
+                tools:visibility="visible" />
+
+            <TextView
+                android:id="@+id/tv_tag_type"
+                style="@style/TextAppearance.App.Muted.Label"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/dim_5"
+                app:layout_constraintBottom_toBottomOf="@id/iv_tag"
+                app:layout_constraintStart_toEndOf="@+id/ivStatusTag"
+                app:layout_constraintTop_toBottomOf="@id/tvTitle"
+                tools:text="Prepago"
+                tools:visibility="visible" />
+
+            <ImageView
+                android:id="@+id/iv_arrow_forward"
+                android:layout_width="wrap_content"
+                android:layout_height="0dp"
+                android:layout_marginEnd="@dimen/space_16"
+                android:src="@drawable/ic_arrow_forward"
+                app:layout_constraintBottom_toBottomOf="@id/iv_tag"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toTopOf="@id/iv_tag"
+                tools:visibility="visible" />
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/ll_buttons"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="@dimen/space_16"
+            android:layout_marginBottom="@dimen/space_16"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/containerTag">
+
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/btn_secondary"
+                style="@style/Widget.App.Button.Outlined"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="8dp"
+                android:text="@string/home_fragment_btn_bills"
+                android:textSize="@dimen/size_14"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toStartOf="@+id/guidelineBtn"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                tools:visibility="gone" />
+
+            <androidx.constraintlayout.widget.Guideline
+                android:id="@+id/guidelineBtn"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                app:layout_constraintGuide_percent="0.5" />
+
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/btn_primary"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/dim_8"
+                android:text="@string/home_fragment_btn_recharge"
+                android:textSize="@dimen/size_14"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toEndOf="@+id/guidelineBtn"
+                app:layout_constraintTop_toTopOf="parent" />
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</com.google.android.material.card.MaterialCardView>

@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <declare-styleable name="TextInputCustom">
+        <!--Types-->
+        <attr name="type" format="integer" />
+
+        <!--Properties-->
+        <attr name="isPassword" format="boolean" />
+        <attr name="isNumber" format="boolean" />
+        <attr name="maxLength" format="integer" />
+        <attr name="isEmail" format="boolean" />
+        <attr name="isEnable" format="boolean" />
+        <attr name="isNormalText" format="boolean" />
+
+        <!--Values-->
+        <attr name="title" format="string" />
+        <attr name="footer" format="string" />
+
+        <!--Hint-->
+        <attr name="dropdownHint" format="string" />
+        <attr name="inputWithIconHint" format="string" />
+        <attr name="hint" format="string" />
+
+        <!--Icon-->
+        <attr name="iconTitle" format="reference" />
+        <attr name="iconLeftInput" format="reference" />
+    </declare-styleable>
+</resources>

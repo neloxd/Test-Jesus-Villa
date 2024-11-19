@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/change_validate_token_graph"
+    app:startDestination="@id/validatedTokenFragment2">
+    <fragment
+        android:id="@+id/validatedTokenFragment2"
+        android:name="com.jesusvilla.test.token.ui.ValidatedTokenFragment"
+        android:label="ValidatedTokenFragment" >
+        <action
+            android:id="@+id/action_validatedTokenFragment2_to_finishedOperationTokenFragment2"
+            app:destination="@id/finishedOperationTokenFragment2"
+            app:enterAnim="@anim/nav_slide_in_right"
+            app:exitAnim="@anim/nav_slide_out_left"
+            app:popEnterAnim="@anim/nav_slide_in_right"
+            app:popExitAnim="@anim/nav_slide_out_left" />
+        <action
+            android:id="@+id/action_validatedTokenFragment2_to_token_show_graph"
+            app:destination="@id/token_show_graph"
+            app:enterAnim="@anim/nav_slide_in_right"
+            app:exitAnim="@anim/nav_slide_out_left"
+            app:popEnterAnim="@anim/nav_slide_in_right"
+            app:popExitAnim="@anim/nav_slide_out_left" />
+    </fragment>
+    <fragment
+        android:id="@+id/finishedOperationTokenFragment2"
+        android:name="com.jesusvilla.test.token.ui.FinishedOperationTokenFragment"
+        android:label="FinishedOperationTokenFragment" />
+    <include app:graph="@navigation/operation_token_tools_dialog_graph" />
+</navigation>

@@ -1,0 +1,210 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:fitsSystemWindows="true"
+    android:theme="@style/Theme.PASE">
+
+    <include
+        android:id="@+id/actionBar"
+        layout="@layout/action_bar"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <androidx.core.widget.NestedScrollView
+        android:id="@+id/container"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/space_0"
+        android:paddingHorizontal="@dimen/space_24"
+        android:paddingBottom="@dimen/dim_16"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/actionBar">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <ImageView
+                android:id="@+id/icLockBackground"
+                android:layout_width="wrap_content"
+                android:layout_height="@dimen/dim_150"
+                android:contentDescription="@string/empty_string"
+                android:src="@drawable/ic_lock_background"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <ImageView
+                android:id="@+id/icLock"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:contentDescription="@string/empty_string"
+                android:src="@drawable/ic_lock"
+                app:layout_constraintBottom_toBottomOf="@+id/icLockBackground"
+                app:layout_constraintEnd_toEndOf="@+id/icLockBackground"
+                app:layout_constraintStart_toStartOf="@+id/icLockBackground"
+                app:layout_constraintTop_toTopOf="@+id/icLockBackground" />
+
+            <TextView
+                android:id="@+id/tvInstructions"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/dim_24"
+                android:gravity="center"
+                android:text="@string/dialog_generated_token_description_capture"
+                android:visibility="visible"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/icLockBackground" />
+
+            <TextView
+                android:id="@+id/tvTokenCode"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="@dimen/dim_24"
+                android:background="@drawable/background_code_generator"
+                android:gravity="center"
+                android:padding="@dimen/dim_16"
+                android:text="@string/dialog_generated_token_code"
+                android:textAlignment="center"
+                android:textColor="@color/color_white"
+                android:textSize="@dimen/text_size_l"
+                android:textStyle="bold"
+                android:typeface="monospace"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/tvInstructions"
+                tools:text="9 3 2 4 9 4" />
+
+            <com.google.android.material.progressindicator.LinearProgressIndicator
+                android:id="@+id/progressBar"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_marginTop="@dimen/dim_24"
+                app:indicatorColor="@color/secondary_color"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/tvTokenCode"
+                app:trackCornerRadius="@dimen/dim_100" />
+
+            <TextView
+                android:id="@+id/tvNextCodeGeneratedOne"
+                style="@style/TextAppearance.App.Label.Medium.Muted"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/dim_24"
+                android:text="@string/dialog_generated_token_next_code"
+                android:textAlignment="center"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/progressBar" />
+
+            <TextView
+                android:id="@+id/tvNextCodeGeneratedTwo"
+                style="@style/TextAppearance.App.Bold.Link.Small"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/dim_8"
+                android:text="@string/dialog_generated_token_next_code_timer"
+                android:textAlignment="center"
+                app:layout_constraintBottom_toBottomOf="@+id/tvNextCodeGeneratedOne"
+                app:layout_constraintStart_toEndOf="@+id/tvNextCodeGeneratedOne"
+                app:layout_constraintTop_toTopOf="@+id/tvNextCodeGeneratedOne" />
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/cvBiometrics"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/dim_24"
+                app:cardBackgroundColor="@color/neutral_color"
+                app:cardCornerRadius="@dimen/space_8"
+                app:cardElevation="@dimen/space_0"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/tvNextCodeGeneratedOne">
+
+                <androidx.constraintlayout.widget.ConstraintLayout
+                    android:id="@+id/dialogMessage"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:paddingHorizontal="@dimen/space_8"
+                    android:paddingVertical="@dimen/space_16">
+
+                    <TextView
+                        android:id="@+id/tvTitle"
+                        style="@style/DesignSystem.Typography.Subtitle1"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/dialog_generated_token_title_biometrics"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="parent" />
+
+                    <TextView
+                        android:id="@+id/tvBiometricsInstructions"
+                        style="@style/TextAppearance.App.Label.Small.Muted"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:gravity="left"
+                        android:text="@string/dialog_generated_token_biometrics_intructions"
+                        android:visibility="visible"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toBottomOf="@+id/tvTitle" />
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/dim_24"
+                        android:orientation="horizontal"
+                        app:layout_constraintTop_toBottomOf="@+id/tvBiometricsInstructions">
+
+                        <TextView
+                            android:id="@+id/tvTitleActivateBiometrics"
+                            style="@style/DesignSystem.Typography.Subtitle1"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:text="@string/dialog_generated_token_biometrics_title_activate_token"
+                            app:layout_constraintStart_toStartOf="parent"
+                            app:layout_constraintTop_toTopOf="parent" />
+
+                        <Switch
+                            android:id="@+id/switchEnableBiometrics"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:thumb="@drawable/switch_custom"
+                            android:track="@drawable/switch_backgound_custom"
+                            tools:ignore="UseSwitchCompatOrMaterialXml" />
+
+                    </LinearLayout>
+
+
+                </androidx.constraintlayout.widget.ConstraintLayout>
+
+            </androidx.cardview.widget.CardView>
+
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+    </androidx.core.widget.NestedScrollView>
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/btn_finish"
+        style="@style/Widget.App.Button.Outlined"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="@dimen/space_24"
+        android:layout_marginBottom="@dimen/dim_16"
+        android:text="@string/dialog_generated_token_end_token"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,153 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources xmlns:tools="http://schemas.android.com/tools">
+
+    <style name="Theme.TuTag" parent="Theme.Material3.DayNight.NoActionBar">
+        <!-- Primary brand color. -->
+        <item name="colorPrimary">@color/gray_primary</item>
+        <item name="colorPrimaryVariant">@color/gray_primary</item>
+        <item name="colorOnPrimary">@color/white</item>
+
+        <item name="backgroundColor">@color/gray_solid</item>
+        <!-- Secondary brand color. -->
+        <item name="colorSecondary">@color/gray_secondary</item>
+        <item name="colorSecondaryVariant">@color/white</item>
+        <item name="colorOnSecondary">@color/black</item>
+        <item name="colorOnSurface">@color/white</item>
+        <item name="colorSurface">@color/gray_secondary</item>
+        <item name="colorOnSurfaceVariant">@color/white</item>
+        <item name="colorPrimaryContainer">@color/gray_secondary</item>
+        <item name="colorOnPrimaryContainer">@color/white</item>
+
+        <!-- Status bar color. -->
+        <item name="android:statusBarColor">@color/transparent</item>
+        <item name="android:windowLightStatusBar">false</item>
+        <!-- Customize your theme here. -->
+        <!-- Customize your attrs here. -->
+        <item name="transparentColor">@color/transparent</item>
+        <item name="linkTextColor">@color/gray_accent</item>
+        <item name="linkTextColorRecoveryPassword">@color/gray_accent</item>
+        <item name="progressIndicatorColor">@color/green_teal</item>
+        <item name="dialogBackgroundColor">?attr/backgroundColor</item>
+        <item name="dialogStrokeColor">@color/gray_lines</item>
+        <item name="dialogButtonTextColor">@color/white_pearl</item>
+        <item name="dialogTextColor">@color/gray_accent</item>
+        <item name="dialogTextTitleColor">@color/white_solid</item>
+
+        <!-- TextFields -->
+        <item name="textFieldTextColor">@color/gray_accent</item>
+        <item name="textFieldCursorColor">?attr/colorPrimary</item>
+        <item name="textFieldErrorColor">@color/red_error_night</item>
+
+        <!-- Outlined Buttons -->
+        <item name="outlinedButtonRippleColor">@color/gray_primary_alpha</item>
+
+        <!-- Filled Buttons -->
+        <item name="secondaryButtonBackgroundColor">?attr/backgroundColor</item>
+
+        <!-- Toast -->
+        <item name="toastBackgroundColor">@color/white_toast</item>
+        <item name="toastTextColor">@color/gray_primary</item>
+
+        <!-- Others -->
+        <item name="dividerColor">@color/gray_divider_dark</item>
+        <item name="dividerColorNavigationView">@color/gray_light</item>
+        <item name="tintColorNavigationView">@color/gray_light</item>
+
+        <item name="android:textColor">@color/white</item>
+        <item name="colorPrimaryDark">@color/green_dark</item>
+        <item name="colorAccent">@color/white</item>
+
+        <item name="textInputOutlinedStyle">@style/TextInputLayoutOutlinedBox</item>
+        <item name="textInputOutlinedExposedDropdownMenuStyle">
+            @style/TextInputLayoutOutlinedBoxExposedDropdownMenu
+        </item>
+
+        <item name="android:textColorPrimary">@color/white</item>
+        <item name="android:itemTextAppearance">@style/PopupMenuOverflowTextApparence</item>
+        <item name="popupMenuBackground">@color/gray_secondary</item>
+
+    </style>
+
+    <style name="PopupMenuOverflowTextApparence">
+        <item name="android:textColor">@color/white</item>
+    </style>
+
+    <style name="TextInputLayoutOutlinedBox" parent="Widget.MaterialComponents.TextInputLayout.OutlinedBox">
+        <item name="materialThemeOverlay">@style/OverlayTextInputEditTextOutlinedBox</item>
+        <item name="colorControlActivated">@color/red</item>
+    </style>
+
+    <style name="TextInputLayoutOutlinedBoxExposedDropdownMenu" parent="Widget.MaterialComponents.TextInputLayout.OutlinedBox.ExposedDropdownMenu">
+        <item name="materialThemeOverlay">@style/OverlayAutoCompleteTextViewOutlinedBox</item>
+    </style>
+
+    <style name="OverlayAutoCompleteTextViewOutlinedBox" parent="ThemeOverlay.MaterialComponents.AutoCompleteTextView.OutlinedBox">
+        <item name="autoCompleteTextViewStyle">@style/AutoCompleteTextViewOutlinedBox</item>
+
+    </style>
+
+    <style name="AutoCompleteTextViewOutlinedBox" parent="Widget.MaterialComponents.AutoCompleteTextView.OutlinedBox">
+        <item name="android:textColor">?attr/colorSecondaryVariant</item>
+    </style>
+
+    <style name="FullScreenDialog" parent="Theme.AppCompat.Light.Dialog">
+        <item name="android:backgroundDimEnabled">false</item>
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:padding">0dp</item>
+        <item name="android:windowIsFloating">false</item>
+        <item name="android:windowBackground">@android:color/transparent</item>
+        <item name="android:windowCloseOnTouchOutside">false</item>
+    </style>
+
+    <style name="MaterialAlertDialog" parent="ThemeOverlay.MaterialComponents.Dialog">
+        <item name="background">@color/backgroundDialog</item>
+        <item name="android:background">@color/backgroundDialog</item>
+        <item name="backgroundColor">@color/backgroundDialog</item>
+        <item name="dialogBackgroundColor">@color/backgroundDialog</item>
+        <item name="android:windowIsFloating">true</item>
+        <item name="buttonBarPositiveButtonStyle">@style/OutlinedButtonAlertDialog</item>
+        <item name="buttonBarNegativeButtonStyle">@style/OutlinedButtonAlertDialog</item>
+        <item name="buttonBarNeutralButtonStyle">@style/OutlinedButtonAlertDialog</item>
+    </style>
+
+    <style name="Theme.Tutag.TuViaje.Favs.TabLayout" parent="Widget.Design.TabLayout">
+        <item name="tabTextAppearance">@style/Theme.Tutag.TabLayout.TextAppearance</item>
+    </style>
+
+    <style name="Theme.Tutag.TabLayout.TextAppearance" parent="TextAppearance.Design.Tab">
+        <item name="textAllCaps">false</item>
+    </style>
+
+    <style name="TextAppearance.ParkingDetails.Concepts.Title" parent="android:Widget">
+        <item name="android:textSize">16sp</item>
+    </style>
+
+    <style name="TextAppearance.ParkingDetails.NoData" parent="android:Widget">
+        <item name="android:textColor">?attr/colorAccent</item>
+        <item name="android:textSize">16sp</item>
+    </style>
+
+
+    <!-- NEW THEME (TOP) -->
+    <style name="Theme.PASE" parent="Theme.Material3.DayNight.NoActionBar">
+        <item name="colorPrimary">@color/primary_color</item>
+        <item name="colorSecondary">@color/secondary_color</item>
+        <item name="colorAccent">@color/primary_color</item>
+        <item name="colorPrimaryDark">@color/secondary_color</item>
+        <item name="materialButtonStyle">@style/Widget.App.Button</item>
+        <item name="textInputStyle">@style/Widget.App.TextInputLayout</item>
+        <item name="android:textViewStyle">@style/Widget.App.TextView</item>
+        <item name="android:statusBarColor">@color/color_white</item>
+        <item name="android:windowLightStatusBar">true</item>
+        <item name="statusBarBackground">@color/color_black</item>
+        <item name="android:navigationBarColor">@color/color_white</item>
+        <item name="android:windowLightNavigationBar" tools:targetApi="27">true</item>
+    </style>
+
+    <style name="Theme.PASE.Start" parent="Theme.Material3.DayNight.NoActionBar">
+        <item name="android:windowBackground">@drawable/splash_screen</item>
+        <item name="android:statusBarColor">@color/primary_color</item>
+        <item name="android:navigationBarColor">@color/primary_color</item>
+    </style>
+    <!-- NEW THEME (BOTTOM) -->
+</resources>

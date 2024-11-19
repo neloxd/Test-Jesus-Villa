@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/your_tags_graph"
+    app:startDestination="@id/yourTagsFragment2">
+
+    <include app:graph="@navigation/edit_tag_graph" />
+
+    <action
+        android:id="@+id/action_your_tags_to_edit_tag"
+        app:destination="@id/edit_tag_graph"
+        app:popUpTo="@navigation/edit_tag_graph"
+        app:popUpToInclusive="true"/>
+
+    <fragment
+        android:id="@+id/yourTagsFragment2"
+        android:name="com.jesusvilla.test.home.ui.fragments.YourTagsFragment"
+        android:label="YourTagsFragment" />
+</navigation>

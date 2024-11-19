@@ -1,0 +1,17 @@
+<resources>
+    <string name="vco_key" templateMergeStrategy="preserve" translatable="false">
+        IJOAN2AM09RLC3FWFSR9218j32bvvJ1O0LAm0faRLvG9Pi6Ns
+    </string>
+	<string name="vco_env" templateMergeStrategy="preserve" translatable="false">
+        PRODUCTION
+    </string>
+    <string name="vco_profile" templateMergeStrategy="preserve" translatable="false">
+        recargas
+    </string>
+    <string name="vco_merchant_id" templateMergeStrategy="preserve" translatable="false">
+        idmexico
+    </string>
+    <string name="cybersource_OrgId" templateMergeStrategy="preserve" translatable="false">
+        k8vif92e
+    </string>
+</resources>

@@ -1,0 +1,88 @@
+plugins {
+    id 'com.android.application'
+    id 'org.jetbrains.kotlin.android'
+    id 'kotlin-android'
+    id 'kotlin-kapt'
+    id 'dagger.hilt.android.plugin'
+}
+
+android {
+    namespace packageApp
+    compileSdk targetSdk
+
+    defaultConfig {
+        applicationId "com.jesusvilla.test"
+        minSdk miniumSdk
+        targetSdk targetSdk
+        versionCode verCode
+        versionName verName
+
+        testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
+    }
+
+    with flavorConfig
+
+    compileOptions {
+        sourceCompatibility JavaVersion.VERSION_1_8
+        targetCompatibility JavaVersion.VERSION_1_8
+    }
+
+    kotlinOptions {
+        jvmTarget = '1.8'
+    }
+    buildFeatures {
+        viewBinding true
+        buildConfig = true
+    }
+    sourceSets {
+        debug {
+            resources {
+                srcDirs 'src/debug/resources'
+            }
+        }
+        release {
+            resources {
+                srcDirs 'src/release/resources'
+            }
+        }
+        google {
+            java {
+                srcDirs 'src/google/java'
+            }
+        }
+    }
+}
+
+dependencies {
+    implementation project(path: ':base')
+    implementation project(path: ':core')
+    implementation project(path: ':home')
+    implementation project(path: ':designSystem')
+    implementation project(path: ':database')
+    implementation libs.appcompat
+    implementation libs.material
+    implementation libs.androidx.activity
+    implementation libs.androidx.constraintlayout
+
+    //Testing
+    testImplementation libs.junit
+    androidTestImplementation libs.androidx.test.ext.junit
+    androidTestImplementation libs.espresso.core
+
+    implementation libs.androidx.navigation.fragment
+    implementation libs.androidx.navigation.ui
+
+    implementation libs.circle.imageview
+
+    implementation(libs.retrofit.rxjava2)
+
+    implementation libs.android.dagger.hilt
+    kapt libs.android.dagger.hilt.compiler
+    implementation libs.androidx.dagger.hilt.navigation.fragment
+    implementation(libs.timber)
+    implementation(libs.androidx.core.splashscreen)
+    implementation libs.lottie
+    implementation(libs.gms.play.services.location)
+    implementation(libs.gms.play.services.maps)
+    implementation(libs.maps.android)
+}

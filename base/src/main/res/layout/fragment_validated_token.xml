@@ -1,0 +1,208 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:theme="@style/Theme.PASE">
+
+    <include
+        android:id="@+id/actionBar"
+        layout="@layout/action_bar"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ScrollView
+        android:id="@+id/container"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/space_0"
+        android:paddingHorizontal="@dimen/space_24"
+        android:paddingBottom="@dimen/dim_16"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintBottom_toTopOf="@id/btn_activate"
+        app:layout_constraintTop_toBottomOf="@id/actionBar">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:id="@+id/tv_indications"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/dim_16"
+                android:text="@string/dialog_validate_token_code_indications"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <TextView
+                android:id="@+id/tv_phone_number"
+                style="@style/TextAppearance.App.Title.Card.Number"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/space_24"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/tv_indications"
+                tools:text="55 8956 3214" />
+
+            <TextView
+                android:id="@+id/tv_label_code"
+                style="@style/TextAppearance.App.Input.Title"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/space_24"
+                android:text="@string/dialog_validate_token_code_label_code"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/tv_phone_number" />
+
+            <LinearLayout
+                android:id="@+id/container_activation_code"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center_horizontal"
+                android:orientation="horizontal"
+                android:weightSum="5"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/tv_label_code">
+
+                <com.google.android.material.textfield.TextInputLayout
+                    android:id="@+id/til_first"
+                    android:layout_width="@dimen/space_0"
+                    android:layout_height="@dimen/space_48"
+                    android:layout_weight=".9">
+
+                    <com.google.android.material.textfield.TextInputEditText
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:gravity="center_horizontal|center_vertical"
+                        android:inputType="number"
+                        android:textSize="@dimen/size_16"
+                        android:maxLength="1" />
+                </com.google.android.material.textfield.TextInputLayout>
+
+                <android.widget.Space
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_weight=".1" />
+
+                <com.google.android.material.textfield.TextInputLayout
+                    android:id="@+id/til_second"
+                    android:layout_width="@dimen/space_0"
+                    android:layout_height="@dimen/space_48"
+                    android:layout_weight=".9">
+
+                    <com.google.android.material.textfield.TextInputEditText
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:gravity="center_horizontal|center_vertical"
+                        android:inputType="number"
+                        android:textSize="@dimen/size_16"
+                        android:maxLength="1" />
+                </com.google.android.material.textfield.TextInputLayout>
+
+                <android.widget.Space
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_weight=".1" />
+
+                <com.google.android.material.textfield.TextInputLayout
+                    android:id="@+id/til_third"
+                    android:layout_width="@dimen/space_0"
+                    android:layout_height="@dimen/space_48"
+                    android:layout_weight=".9">
+
+                    <com.google.android.material.textfield.TextInputEditText
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:inputType="number"
+                        android:gravity="center_horizontal|center_vertical"
+                        android:textSize="@dimen/size_16"
+                        android:maxLength="1" />
+                </com.google.android.material.textfield.TextInputLayout>
+
+                <android.widget.Space
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_weight=".1" />
+
+                <com.google.android.material.textfield.TextInputLayout
+                    android:id="@+id/til_four"
+                    android:layout_width="@dimen/space_0"
+                    android:layout_height="@dimen/space_48"
+                    android:layout_weight=".9">
+
+                    <com.google.android.material.textfield.TextInputEditText
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:inputType="number"
+                        android:gravity="center_horizontal|center_vertical"
+                        android:textSize="@dimen/size_16"
+                        android:maxLength="1" />
+                </com.google.android.material.textfield.TextInputLayout>
+
+                <android.widget.Space
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_weight=".1" />
+
+                <com.google.android.material.textfield.TextInputLayout
+                    android:id="@+id/til_five"
+                    android:layout_width="@dimen/space_0"
+                    android:layout_height="@dimen/space_48"
+                    android:layout_weight=".9">
+
+                    <com.google.android.material.textfield.TextInputEditText
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:inputType="number"
+                        android:gravity="center_horizontal|center_vertical"
+                        android:textSize="@dimen/size_16"
+                        android:maxLength="1" />
+                </com.google.android.material.textfield.TextInputLayout>
+
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/tv_question_code"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/space_40"
+                android:text="@string/dialog_validate_token_code_label_code_question"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/container_activation_code" />
+
+            <TextView
+                android:id="@+id/tv_resend_code"
+                style="@style/TextAppearance.App.Subtitle.Bold.Muted"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+
+                android:layout_marginTop="@dimen/space_8"
+                android:text="@string/dialog_validate_token_code_verification"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/tv_question_code" />
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+    </ScrollView>
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/btn_activate"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="@dimen/space_24"
+        android:layout_marginBottom="@dimen/dim_16"
+        android:enabled="false"
+        android:text="@string/dialog_validate_token_code_btn_activate"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+</androidx.constraintlayout.widget.ConstraintLayout>

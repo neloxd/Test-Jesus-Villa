@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/token_show_graph"
+    xmlns:tools="http://schemas.android.com/tools"
+    app:startDestination="@id/generateTokenFragment">
+
+
+    <fragment
+        android:id="@+id/generateTokenFragment"
+        android:name="com.jesusvilla.test.token.ui.GenerateTokenFragment"
+        android:label="GenerateTokenFragment"
+        tools:layout="@layout/fragment_generate_token"/>
+</navigation>

@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/emptyStateFrame"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:visibility="gone"
+    android:background="@color/window_background">
+    <include
+        android:id="@+id/action_bar"
+        layout="@layout/action_bar"/>
+
+        <LinearLayout
+            android:id="@+id/emptyContainer"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:orientation="vertical">
+
+            <ImageView
+                android:id="@+id/ivAddTag"
+                android:layout_width="wrap_content"
+                android:layout_height="@dimen/dim_200"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginBottom="@dimen/dim_10"
+                android:src="@drawable/tags_empty_state"
+                android:contentDescription="@string/empty_string" />
+
+            <TextView
+                android:id="@+id/tvTitleEmpty"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:textColor="@color/green_dark"
+                android:text="@string/home_empty_tag_title"
+                android:textSize="@dimen/dim_22" />
+
+            <TextView
+                android:id="@+id/tvDescriptionEmpty"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="@dimen/dim_8"
+                android:gravity="center"
+                android:paddingLeft="60dp"
+                android:paddingRight="60dp"
+                android:textColor="@color/green_light"
+                android:text="@string/home_empty_tag_description"
+                android:textSize="@dimen/dim_16" />
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/dim_64">
+
+                <Button
+                    android:id="@+id/btnAddTag"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerHorizontal="true"
+                    android:layout_centerVertical="true"
+                    android:layout_gravity="center_horizontal"
+                    android:indeterminate="true"
+                    android:text="@string/home_empty_tag_add_tag" />
+            </RelativeLayout>
+        </LinearLayout>
+</FrameLayout>

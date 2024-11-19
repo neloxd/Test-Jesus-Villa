@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/home_graph"
+    app:startDestination="@id/testFragment">
+
+    <!--region Include -->
+
+
+    <!--region Global Action -->
+    <action
+        android:id="@+id/action_global_home1"
+        app:destination="@id/home_graph" />
+
+    <action
+        android:id="@+id/action_your_tags_to_add_tags"
+        app:destination="@id/add_tag_graph"
+        />
+    <action
+        android:id="@+id/add_tags_to_your_tags"
+        app:destination="@id/your_tags_graph"
+        app:popUpTo="@id/your_tags_graph"
+        app:popUpToInclusive="true"
+        />
+
+    <!--endregion-->
+    <fragment
+        android:id="@+id/newHomeFragment"
+        android:name="com.jesusvilla.test.home.ui.fragments.HomeFragment"
+        android:label="NewHomeFragment"
+        tools:layout="@layout/fragment_new_home">
+        <action
+            android:id="@+id/action_newHomeFragment_to_activationTagFragment"
+            app:destination="@+id/activationTagFragment" />
+        <action
+            android:id="@+id/action_newHomeFragment_to_yourTagsFragment"
+            app:destination="@id/your_tags_graph" />
+        <action
+            android:id="@+id/action_newHomeFragment_to_your_tags_graph"
+            app:destination="@id/your_tags_graph" />
+    </fragment>
+    <fragment
+        android:id="@+id/testFragment"
+        android:name="com.jesusvilla.test.home.ui.fragments.TestFragment"
+        android:label="TestFragment"
+        tools:layout="@layout/fragment_test">
+        <action
+            android:id="@+id/action_testFragment_to_testDetailFragment"
+            app:destination="@id/testDetailFragment" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/testDetailFragment"
+        android:name="com.jesusvilla.test.home.ui.fragments.TestDetailFragment"
+        android:label="TestDetailFragment"
+        tools:layout="@layout/fragment_test_detail"/>
+    <fragment
+        android:id="@+id/activationTagFragment"
+        android:name="com.jesusvilla.test.home.ui.fragments.activationTag.ActivationTagFragment"
+        android:label="ActivationTagFragment"
+        tools:layout="@layout/fragment_dialog_token_activated">
+        <action
+            android:id="@+id/action_activationTagFragment_to_domiciliation"
+            app:destination="@+id/domiciliation_graph" />
+    </fragment>
+
+</navigation>

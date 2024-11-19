@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/llItemTag"
+    android:orientation="horizontal"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:padding="@dimen/dim_10"
+    tools:theme="@style/Theme.TuTag"
+    android:background="?android:attr/selectableItemBackground">
+
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:id="@+id/logoTagImageView"
+        android:layout_width="@dimen/dim_60"
+        android:layout_height="@dimen/dim_60"
+        android:src="@drawable/tag_pase"
+        app:civ_border_color="?attr/colorSecondary"
+        app:civ_border_width="@dimen/dim_2"
+        app:layout_collapseMode="pin"
+        android:layout_margin="@dimen/dim_5" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:paddingLeft="@dimen/dim_10">
+
+        <TextView
+            android:id="@+id/aliasTagTextView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            tools:text="Peugeot Negro"
+            android:textAlignment="viewStart"
+            android:textColor="?attr/colorAccent"
+            android:textSize="@dimen/text_size_medium_biggest"
+            android:textStyle="normal|bold" />
+
+        <TextView
+            android:id="@+id/numeroTagTextView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            tools:text="IMDM 20494558-5"
+            android:textAlignment="viewStart"
+            android:textColor="?attr/colorAccent"
+            android:textSize="@dimen/text_size_medium_upper" />
+
+        <TextView
+            android:id="@+id/tipoCobroTagTextView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/dim_4"
+            tools:text="Prepago"
+            android:textAlignment="viewStart"
+            android:textColor="?attr/colorAccent"
+            android:textSize="@dimen/text_size_medium_small" />
+
+    </LinearLayout>
+
+</LinearLayout>

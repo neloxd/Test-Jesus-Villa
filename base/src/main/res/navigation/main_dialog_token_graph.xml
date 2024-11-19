@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main_dialog_token_graph"
+    app:startDestination="@id/token_dialog_graph">
+
+
+    <include app:graph="@navigation/activate_token_dialog_graph" />
+    <include app:graph="@navigation/operation_change_phone_dialog_graph" />
+    <include app:graph="@navigation/operation_token_dialog_to_action_graph" />
+    <include app:graph="@navigation/operation_token_tools_dialog_graph" />
+    <include app:graph="@navigation/operation_validate_token_dialog_graph" />
+
+    <action
+        android:id="@+id/action_global_change_validate_token_graph"
+        app:destination="@id/change_validate_token_graph" />
+    <action
+        android:id="@+id/action_global_token_show_graph"
+        app:destination="@id/token_show_graph" />
+    <action
+        android:id="@+id/action_global_operation_token_to_action_graph"
+        app:destination="@id/operation_token_to_action_graph" />
+    <action
+        android:id="@+id/action_global_change_phone_number_graph"
+        app:destination="@id/change_phone_number_graph" />
+    <action
+        android:id="@+id/action_global_token_dialog_graph"
+        app:destination="@id/token_dialog_graph" />
+
+</navigation>

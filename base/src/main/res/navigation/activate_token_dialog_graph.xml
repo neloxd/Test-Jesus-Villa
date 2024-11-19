@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/token_dialog_graph"
+    app:startDestination="@id/mainTokenFragment">
+
+    <fragment
+        android:id="@+id/mainTokenFragment"
+        android:name="com.jesusvilla.test.token.ui.MainTokenFragment"
+        android:label="MainTokenFragment"
+        tools:layout="@layout/fragment_main_token">
+        <action
+            android:id="@+id/action_mainTokenFragment_to_activateTokenFragment"
+            app:destination="@id/activateTokenFragment"
+            app:enterAnim="@anim/nav_slide_in_right"
+            app:exitAnim="@anim/nav_slide_out_left"
+            app:popEnterAnim="@anim/nav_slide_in_right"
+            app:popExitAnim="@anim/nav_slide_out_left" />
+        <action
+            android:id="@+id/action_mainTokenFragment_to_change_validate_token_graph"
+            app:destination="@id/change_validate_token_graph"
+            app:enterAnim="@anim/nav_slide_in_right"
+            app:exitAnim="@anim/nav_slide_out_left"
+            app:popEnterAnim="@anim/nav_slide_in_right"
+            app:popExitAnim="@anim/nav_slide_out_left" />
+    </fragment>
+    <fragment
+        android:id="@+id/activateTokenFragment"
+        android:name="com.jesusvilla.test.token.ui.ActivateTokenFragment"
+        android:label="ActivateTokenFragment"
+        tools:layout="@layout/fragment_activate_token">
+        <action
+            android:id="@+id/action_activateTokenFragment_to_change_phone_number_graph2"
+            app:destination="@id/change_phone_number_graph" />
+        <action
+            android:id="@+id/action_activateTokenFragment_to_change_phone_number_graph3"
+            app:destination="@id/change_phone_number_graph" />
+        <action
+            android:id="@+id/action_activateTokenFragment_to_change_phone_number_graph4"
+            app:destination="@id/change_phone_number_graph"
+            app:enterAnim="@anim/nav_slide_in_right"
+            app:popExitAnim="@anim/nav_slide_out_right" />
+        <action
+            android:id="@+id/action_activateTokenFragment_to_change_validate_token_graph"
+            app:destination="@id/change_validate_token_graph"
+            app:enterAnim="@anim/nav_slide_in_right"
+            app:exitAnim="@anim/nav_slide_out_left"
+            app:popEnterAnim="@anim/nav_slide_in_right"
+            app:popExitAnim="@anim/nav_slide_out_left" />
+    </fragment>
+
+    <include app:graph="@navigation/operation_change_phone_dialog_graph" />
+    <include app:graph="@navigation/operation_validate_token_dialog_graph" />
+</navigation>

@@ -1,0 +1,263 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <style name="MaterialPase.TextView.Secondary" parent="Widget.AppCompat.TextView">
+        <item name="android:textSize">14sp</item>
+        <item name="android:textColor">?attr/textFieldTextColor</item>
+    </style>
+
+    <style name="MaterialPase.TextView.Primary" parent="Widget.AppCompat.TextView">
+        <item name="android:textSize">14sp</item>
+        <item name="android:textColor">?attr/textFieldTextColor</item>
+    </style>
+
+    <style name="MaterialPase.TextInputLayout.OutlinedBox" parent="Widget.MaterialComponents.TextInputLayout.OutlinedBox">
+        <item name="cursorColor">?android:attr/colorPrimary</item>
+        <item name="hintTextColor">?android:attr/colorPrimary</item>
+        <item name="android:textColor">?attr/textFieldTextColor</item>
+        <item name="errorIconTint">?attr/textFieldErrorColor</item>
+        <item name="boxStrokeErrorColor">?attr/textFieldErrorColor</item>
+        <item name="errorTextColor">?attr/textFieldErrorColor</item>
+        <item name="cursorErrorColor">?attr/textFieldErrorColor</item>
+        <item name="strokeWidth">@dimen/generic_2dp</item>
+    </style>
+
+    <style name="MaterialPase.TextInputLayout.OutlinedBox.ExposedDropdownMenu" parent="Widget.MaterialComponents.TextInputLayout.OutlinedBox.ExposedDropdownMenu">
+        <item name="cursorColor">?android:attr/colorPrimary</item>
+        <item name="hintTextColor">?android:attr/colorPrimary</item>
+        <item name="android:textColor">?attr/textFieldTextColor</item>
+        <item name="errorIconTint">?attr/textFieldErrorColor</item>
+        <item name="boxStrokeErrorColor">?attr/textFieldErrorColor</item>
+        <item name="errorTextColor">?attr/textFieldErrorColor</item>
+        <item name="cursorErrorColor">?attr/textFieldErrorColor</item>
+        <item name="strokeWidth">@dimen/generic_2dp</item>
+    </style>
+
+    <style name="MaterialPase.TextInputEditText" parent="Widget.MaterialComponents.TextInputLayout.OutlinedBox">
+        <item name="android:textSize">@dimen/text_size_s</item>
+        <item name="android:textColor">?attr/textFieldTextColor</item>
+        <item name="errorIconTint">?attr/textFieldErrorColor</item>
+        <item name="boxStrokeErrorColor">?attr/textFieldErrorColor</item>
+        <item name="errorTextColor">?attr/textFieldErrorColor</item>
+        <item name="cursorErrorColor">?attr/textFieldErrorColor</item>
+    </style>
+
+    <style name="MaterialPase.Button" parent="Widget.MaterialComponents.Button.UnelevatedButton">
+        <item name="android:backgroundTint">?android:attr/colorPrimary</item>
+        <item name="android:paddingHorizontal">@dimen/dim_16</item>
+        <item name="android:paddingVertical">@dimen/dim_10</item>
+        <item name="android:textAppearance">@style/DesignSystem.Typography.Button</item>
+        <item name="cornerFamily">rounded</item>
+        <item name="cornerRadius">20dp</item>
+    </style>
+
+    <style name="MaterialPase.Button.Dialog" parent="Widget.MaterialComponents.Button.UnelevatedButton">
+        <item name="android:backgroundTint">?android:attr/colorPrimary</item>
+        <item name="android:paddingHorizontal">@dimen/dim_24</item>
+        <item name="android:paddingVertical">@dimen/dim_10</item>
+        <item name="android:textAppearance">@style/DesignSystem.Typography.Button</item>
+        <item name="cornerFamily">rounded</item>
+        <item name="cornerRadius">20dp</item>
+    </style>
+
+    <style name="MaterialPase.Button.Secondary" parent="Widget.MaterialComponents.Button">
+        <item name="android:backgroundTint">?attr/secondaryButtonBackgroundColor</item>
+        <item name="android:paddingHorizontal">@dimen/dim_16</item>
+        <item name="android:paddingVertical">@dimen/dim_10</item>
+        <item name="android:textAppearance">@style/DesignSystem.Typography.Button</item>
+        <item name="cornerFamily">rounded</item>
+        <item name="cornerRadius">20dp</item>
+    </style>
+
+    <style name="MaterialPase.Button.OutlinedButton" parent="Widget.MaterialComponents.Button.OutlinedButton">
+        <item name="android:textAppearance">@style/DesignSystem.Typography.Button</item>
+        <item name="android:textColor">?attr/colorSecondary</item>
+        <item name="strokeColor">@color/gray_lines</item>
+        <item name="rippleColor">?attr/outlinedButtonRippleColor</item>
+        <item name="cornerFamily">rounded</item>
+        <item name="cornerRadius">20dp</item>
+    </style>
+
+    <style name="MaterialPase.ExtendedFab" parent="Widget.MaterialComponents.ExtendedFloatingActionButton">
+        <item name="android:background">@color/blue_dark</item>
+        <item name="android:textColor">@android:color/white</item>
+    </style>
+
+    <style name="MaterialPase.Textview" parent="@style/Widget.MaterialComponents.TextView">
+        <item name="android:textAppearance">@style/DesignSystem.Typography.Paragraph1</item>
+        <item name="android:textColor">?attr/colorOnPrimary</item>
+    </style>
+
+    <style name="MaterialPase.Toolbar.Title" parent="@style/Widget.MaterialComponents.TextView">
+        <item name="android:textSize">22sp</item>
+        <item name="android:textStyle">normal</item>
+        <item name="android:textColor">?attr/colorOnPrimary</item>
+        <item name="android:maxLines">1</item>
+        <item name="android:ellipsize">end</item>
+    </style>
+
+    <style name="MaterialPase.Textview.Bold" parent="MaterialPase.Textview">
+        <item name="android:textAppearance">@style/DesignSystem.Typography.Subtitle1</item>
+        <item name="android:textColor">?attr/colorOnPrimary</item>
+        <item name="android:textSize">18sp</item>
+
+    </style>
+
+
+    <!-- region inputs -->
+    <style name="MaterialPaseTheme.TextInputEditText.TextInputLayout" parent="Widget.MaterialComponents.TextInputLayout.OutlinedBox">
+        <item name="boxStrokeColor">@drawable/color_text_input_layout</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="boxCollapsedPaddingTop">@dimen/custom_text_input_box_collapsed_padding_top
+        </item>
+        <item name="boxStrokeWidthFocused">@dimen/generic_2dp</item>
+        <item name="boxStrokeErrorColor">@color/red_error</item>
+        <item name="errorTextColor">@color/gray_basic</item>
+        <item name="errorTextAppearance">@style/MaterialPaseTheme.TextErrorAppearance</item>
+        <item name="counterTextAppearance">@style/TextAppearance.Design.Counter</item>
+        <item name="shapeAppearance">@style/MaterialPaseTheme.ShapeAppearance</item>
+        <item name="counterOverflowTextAppearance">@style/TextAppearance.Design.Counter.Overflow
+        </item>
+        <item name="hintTextColor">@color/gray_basic</item>
+        <item name="hintTextAppearance">@style/MaterialPaseTheme.TextFloatLabelAppearance</item>
+    </style>
+
+    <style name="MaterialPaseTheme.CustomTextEditText" parent="Widget.AppCompat.TextView">
+        <item name="android:textSize">@dimen/text_size_medium_small</item>
+        <item name="android:singleLine">true</item>
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:paddingEnd">@dimen/custom_text_input_padding_end</item>
+        <item name="android:paddingTop">@dimen/custom_text_input_padding_top</item>
+        <item name="android:paddingBottom">@dimen/custom_text_input_padding_bottom</item>
+        <item name="android:paddingStart">@dimen/custom_text_input_padding_start</item>
+    </style>
+
+    <style name="MaterialPaseTheme.TextErrorAppearance" parent="TextAppearance.Design.Error">
+        <!-- Error message appearance here -->
+        <item name="android:textColor">@color/orange_warning</item>
+        <item name="boxStrokeColor">@color/gray_basic</item>
+        <item name="boxStrokeWidth">@dimen/generic_2dp</item>
+        <item name="android:paddingTop">14dp</item>
+        <item name="lineHeight">21dp</item>
+        <item name="android:gravity">center_vertical</item>
+        <item name="endIconMode">none</item>
+        <item name="android:textSize">12sp</item>
+    </style>
+
+    <style name="MaterialPaseTheme.ShapeAppearance" parent="ShapeAppearance.MaterialComponents.SmallComponent">
+        <item name="cornerFamily">rounded</item>
+        <item name="cornerSize">6dp</item>
+    </style>
+
+    <style name="MaterialPaseTheme.TextFloatLabelAppearance" parent="TextAppearance.Design.Hint">
+        <!-- Floating label appearance here -->
+        <item name="android:textSize">@dimen/text_size_small</item>
+    </style>
+
+    <style name="MaterialPaseTheme.TextTermsConditions" parent="TextAppearance.Design.Hint">
+        <item name="android:textSize">@dimen/text_size_small_big</item>
+    </style>
+
+    <style name="OutlinedRoundedBox" parent="Widget.MaterialComponents.TextInputLayout.OutlinedBox">
+        <item name="shapeAppearanceOverlay">
+            @style/ShapeAppearanceOverlay.MyApp.TextInputLayout.Rounded
+        </item>
+    </style>
+
+    <style name="ShapeAppearanceOverlay.MyApp.TextInputLayout.Rounded" parent="">
+        <item name="cornerFamily">rounded</item>
+        <item name="cornerSize">8dp</item>
+    </style>
+
+    <style name="HintTextStyle" parent="TextAppearance.Design.Hint">
+        <item name="android:textSize">16sp</item>
+    </style>
+
+    <style name="ShapeAppearance.App.SmallComponent" parent="ShapeAppearance.MaterialComponents.SmallComponent">
+        <item name="cornerFamily">cut</item>
+        <item name="cornerSize">4dp</item>
+    </style>
+
+    <style name="TagTheme.Widget.App.TextInputLayout" parent="Widget.MaterialComponents.TextInputLayout.OutlinedBox">
+        <item name="materialThemeOverlay">@style/ThemeOverlay.App.TextInputLayout</item>
+        <item name="shapeAppearance">@style/ShapeAppearance.App.SmallComponent</item>
+        <item name="hintTextColor">?attr/colorOnSurface</item>
+    </style>
+
+    <style name="ThemeOverlay.App.TextInputLayout" parent="">
+        <item name="colorPrimary">?attr/colorPrimary</item>
+        <item name="colorOnSurface">@color/orange_warning</item>
+        <item name="colorError">@color/red_error</item>
+    </style>
+
+    <style name="OutlinedRoundBox" parent="Widget.MaterialComponents.TextInputLayout.OutlinedBox">
+        <item name="boxBackgroundMode">outline</item>
+        <item name="boxCornerRadiusBottomEnd">32dp</item>
+        <item name="boxCornerRadiusBottomStart">32dp</item>
+        <item name="boxCornerRadiusTopEnd">32dp</item>
+        <item name="boxCornerRadiusTopStart">32dp</item>
+        <item name="android:paddingLeft">20dp</item>
+    </style>
+    <!-- endregion -->
+
+    <style name="OutlinedButtonAlertDialog" parent="Widget.MaterialComponents.Button.OutlinedButton">
+        <item name="android:layout_marginStart">8dp</item>
+        <item name="strokeColor">?attr/dialogStrokeColor</item>
+        <item name="android:textColor">?attr/dialogButtonTextColor</item>
+        <item name="strokeWidth">1dp</item>
+    </style>
+
+    <style name="Theme.TuTag.AppBarOverlay" parent="ThemeOverlay.AppCompat.Dark.ActionBar" />
+
+    <style name="Theme.TuTag.PopupOverlay" parent="ThemeOverlay.AppCompat.Light" />
+
+    <style name="Theme.Tutag.Main.TabLayout.TextAppearance" parent="TextAppearance.Design.Tab">
+        <item name="android:textSize">@dimen/text_size_s</item>
+        <item name="android:textColor">?android:textColorSecondary</item>
+        <item name="textAllCaps">true</item>
+    </style>
+
+    <style name="TextAppearance.List.Item.Details" parent="android:Widget">
+        <item name="android:textColor">?attr/colorAccent</item>
+        <item name="android:textSize">@dimen/text_size_medium</item>
+    </style>
+
+    <style name="MaterialPaseTheme.NavigationView" parent="Widget.Material3.NavigationView">
+        <item name="itemIconTint">@color/sidebar_item</item>
+        <item name="itemTextColor">@color/sidebar_item</item>
+        <item name="android:background">@color/sidebar_background</item>
+        <item name="backgroundColor">?attr/backgroundColor</item>
+        <item name="android:listDivider">?attr/dividerColorNavigationView</item>
+    </style>
+
+    <style name="TextAppearance.ActionBar.Title" parent="Base.TextAppearance.AppCompat.Widget.ActionBar.Title">
+        <item name="android:textColor">#fff</item>
+        <item name="android:textSize">@dimen/dim_18</item>
+    </style>
+
+    <style name="TextAppearance.ActionBar.Subtitle" parent="Base.TextAppearance.AppCompat.Widget.ActionBar.Subtitle">
+        <item name="android:textColor">#fff</item>
+        <item name="android:textSize">@dimen/dim_16</item>
+    </style>
+
+    <style name="CustomMaterialAlertDialog" parent="MaterialAlertDialog.MaterialComponents">
+        <item name="shapeAppearanceOverlay">@style/ShapeAppearanceOverlay.Custom.Rounded16</item>
+        <item name="background">@color/backgroundDialog</item>
+    </style>
+
+    <style name="CustomMaterialAlertDialogTransparent" parent="MaterialAlertDialog.MaterialComponents">
+        <item name="shapeAppearanceOverlay">@style/ShapeAppearanceOverlay.Custom.Rounded16</item>
+        <item name="background">@android:color/transparent</item>
+    </style>
+
+    <style name="ShapeAppearanceOverlay.Custom.Rounded16" parent="">
+        <item name="cornerFamily">rounded</item>
+        <item name="cornerSize">@dimen/dim_16</item>
+    </style>
+
+    <style name="GenericDialogStyle" parent="Theme.MaterialComponents.Light.Dialog">
+        <item name="android:layout_gravity">center</item>
+        <item name="dialogCornerRadius">@dimen/space_16</item>
+    </style>
+</resources>

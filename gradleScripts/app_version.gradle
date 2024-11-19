@@ -1,0 +1,8 @@
+ext {
+    packageApp = 'com.jesusvilla.test'
+    targetSdk = 34
+    miniumSdk = 28
+    verCode = 1
+    verName = "4.0.0.24424"
+    extId = "abcd1234"
+}
